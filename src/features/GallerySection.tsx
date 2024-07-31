@@ -36,11 +36,12 @@ const GallerySection = ({
       <Section
         sectionRef={sectionRef}
         onClick={scrollToContent}
-        text={"gallery"}
+        text={data.text}
       />
 
       {!isHidden && (
         <section
+          id={data.text}
           ref={contentRef}
           className="bg-black text-white py-20 px-8  h-screen"
         >

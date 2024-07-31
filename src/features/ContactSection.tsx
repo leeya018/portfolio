@@ -1,13 +1,18 @@
-// components/AboutSection1.tsx
-import Section from "@/components/Section";
+// components/PressSection1.tsx
 import React, { useState, useRef, useEffect } from "react";
+import Section from "../components/Section";
+import Image from "next/image";
 
-type AboutSectionProps = {
+type ContactSectionProps = {
   data: any;
   contentRef: React.RefObject<HTMLDivElement>;
   sectionRef: React.RefObject<HTMLDivElement>;
 };
-const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
+const ContactSection = ({
+  contentRef,
+  sectionRef,
+  data,
+}: ContactSectionProps) => {
   const [isHidden, setIsHidden] = useState(true);
 
   useEffect(() => {
@@ -48,7 +53,7 @@ const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
               -
             </button>
           </div>
-          <div className="container mx-auto">
+          <div className="">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="col-span-1 md:col-span-2">
                 <h2 className="text-xl font-semibold mb-4">{data.title}</h2>
@@ -56,11 +61,14 @@ const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
                   {data.description}
                   {/* More text here */}
                 </p>
-                {/* Add more text as needed */}
-              </div>
-              <div className="col-span-1 md:col-span-1">
-                <h2 className="text-xl font-semibold mb-4">LIFE STORY</h2>
-                <div>{data.lifeStory}</div>
+                <p className="text-gray-300 mb-4">
+                  {data.email}
+                  {/* More text here */}
+                </p>
+                <p className="text-gray-300 mb-4">
+                  {data.phone}
+                  {/* More text here */}
+                </p>
               </div>
             </div>
           </div>
@@ -70,4 +78,4 @@ const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
   );
 };
 
-export default AboutSection;
+export default ContactSection;
