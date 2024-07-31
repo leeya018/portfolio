@@ -1,31 +1,17 @@
 // components/AboutSection1.tsx
 import Section from "@/components/Section";
+import useContent from "@/hooks/useContentHook";
+import { contentStore } from "@/store/contentStore";
+import { contentTypes } from "@/util";
+import { observer } from "mobx-react-lite";
 import React, { useState, useRef, useEffect } from "react";
 
 type AboutSectionProps = {
   data: any;
-  contentRef: React.RefObject<HTMLDivElement>;
-  sectionRef: React.RefObject<HTMLDivElement>;
 };
-const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
-  const [isHidden, setIsHidden] = useState(true);
-
-  useEffect(() => {
-    if (!isHidden && contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [isHidden]);
-
-  const scrollToContent = () => {
-    setIsHidden(false);
-  };
-
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
-      setIsHidden(true);
-    }
-  };
+const AboutSection = ({ data }: AboutSectionProps) => {
+  const { contentRef, sectionRef, scrollToContent, scrollToSection } =
+    useContent(data);
   return (
     <>
       <Section
@@ -34,16 +20,17 @@ const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
         text={data.text}
       />
 
-      {!isHidden && (
+      {contentStore.name === data.type && (
         <section
-          id={data.text}
+          id={data.type}
           ref={contentRef}
           className="bg-black text-white py-20 px-8  h-screen"
         >
           <div className="flex w-full justify-center pt-20">
             <button
               onClick={scrollToSection}
-              className="p-5 flex rounded-full justify-center items-center border-2"
+              className="p-5 flex rounded-full  
+              justify-center items-center border-2 "
             >
               -
             </button>
@@ -70,4 +57,4 @@ const AboutSection = ({ contentRef, sectionRef, data }: AboutSectionProps) => {
   );
 };
 
-export default AboutSection;
+export default observer(AboutSection);

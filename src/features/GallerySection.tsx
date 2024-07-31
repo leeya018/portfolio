@@ -2,35 +2,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import Section from "../components/Section";
 import Image from "next/image";
+import { contentStore } from "@/store/contentStore";
+import { contentTypes } from "@/util";
+import { observer } from "mobx-react-lite";
+import useContent from "@/hooks/useContentHook";
 
 type GallerySectionProps = {
   data: any;
-  contentRef: React.RefObject<HTMLDivElement>;
-  sectionRef: React.RefObject<HTMLDivElement>;
 };
-const GallerySection = ({
-  contentRef,
-  sectionRef,
-  data,
-}: GallerySectionProps) => {
-  const [isHidden, setIsHidden] = useState(true);
-
-  useEffect(() => {
-    if (!isHidden && contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [isHidden]);
-
-  const scrollToContent = () => {
-    setIsHidden(false);
-  };
-
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
-      setIsHidden(true);
-    }
-  };
+const GallerySection = ({ data }: GallerySectionProps) => {
+  const { contentRef, sectionRef, scrollToContent, scrollToSection } =
+    useContent(data);
   return (
     <>
       <Section
@@ -39,9 +21,9 @@ const GallerySection = ({
         text={data.text}
       />
 
-      {!isHidden && (
+      {contentStore.name === data.type && (
         <section
-          id={data.text}
+          id={data.type}
           ref={contentRef}
           className="bg-black text-white py-20 px-8  h-screen"
         >
@@ -65,7 +47,7 @@ const GallerySection = ({
             </div>
 
             <div className="flex justify-center w-full">
-              <div className="flex flex-wrap   overflow-hidden">
+              <div className="flex flex-wrap gap-4 mx-20">
                 {data.images.map((src: string, index: number) => (
                   <div key={index} className=" rounded-lg p-10">
                     <Image
@@ -86,4 +68,4 @@ const GallerySection = ({
   );
 };
 
-export default GallerySection;
+export default observer(GallerySection);

@@ -2,35 +2,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import Section from "../components/Section";
 import Image from "next/image";
+import useContent from "@/hooks/useContentHook";
+import { contentStore } from "@/store/contentStore";
+import { observer } from "mobx-react-lite";
 
 type SpeakingSectionProps = {
   data: any;
-  contentRef: React.RefObject<HTMLDivElement>;
-  sectionRef: React.RefObject<HTMLDivElement>;
 };
-const SpeakingSection = ({
-  contentRef,
-  sectionRef,
-  data,
-}: SpeakingSectionProps) => {
-  const [isHidden, setIsHidden] = useState(true);
-
-  useEffect(() => {
-    if (!isHidden && contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [isHidden]);
-
-  const scrollToContent = () => {
-    setIsHidden(false);
-  };
-
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
-      setIsHidden(true);
-    }
-  };
+const SpeakingSection = ({ data }: SpeakingSectionProps) => {
+  const { contentRef, sectionRef, scrollToContent, scrollToSection } =
+    useContent(data);
   return (
     <>
       <Section
@@ -39,9 +20,9 @@ const SpeakingSection = ({
         text={data.text}
       />
 
-      {!isHidden && (
+      {contentStore.name === data.type && (
         <section
-          id={data.text}
+          id={data.type}
           ref={contentRef}
           className="bg-black text-white py-20 px-8  h-screen"
         >
@@ -86,4 +67,4 @@ const SpeakingSection = ({
   );
 };
 
-export default SpeakingSection;
+export default observer(SpeakingSection);

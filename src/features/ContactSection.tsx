@@ -1,35 +1,17 @@
 // components/PressSection1.tsx
 import React, { useState, useRef, useEffect } from "react";
 import Section from "../components/Section";
+import useContent from "@/hooks/useContentHook";
+import { contentStore } from "@/store/contentStore";
+import { observer } from "mobx-react-lite";
 
 type ContactSectionProps = {
   data: any;
-  contentRef: React.RefObject<HTMLDivElement>;
-  sectionRef: React.RefObject<HTMLDivElement>;
 };
-const ContactSection = ({
-  contentRef,
-  sectionRef,
-  data,
-}: ContactSectionProps) => {
-  const [isHidden, setIsHidden] = useState(true);
+const ContactSection = ({ data }: ContactSectionProps) => {
+  const { contentRef, sectionRef, scrollToContent, scrollToSection } =
+    useContent(data);
 
-  useEffect(() => {
-    if (!isHidden && contentRef.current) {
-      contentRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [isHidden]);
-
-  const scrollToContent = () => {
-    setIsHidden(false);
-  };
-
-  const scrollToSection = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" });
-      setIsHidden(true);
-    }
-  };
   return (
     <>
       <Section
@@ -38,9 +20,9 @@ const ContactSection = ({
         text={data.text}
       />
 
-      {!isHidden && (
+      {contentStore.name === data.type && (
         <section
-          id={data.text}
+          id={data.type}
           ref={contentRef}
           className="bg-black text-white py-20 px-8  h-screen"
         >
@@ -77,4 +59,4 @@ const ContactSection = ({
   );
 };
 
-export default ContactSection;
+export default observer(ContactSection);

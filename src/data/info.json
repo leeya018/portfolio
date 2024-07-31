@@ -1,5 +1,6 @@
 {
   "about": {
+    "type": "about",
     "text": "about",
     "title": "About",
     "description": "Learn more about our experienced Bachata trainer, their journey, and their passion for dance.",
@@ -7,6 +8,7 @@
     "lifeStory": "Learn more about our experienced Bachata trainer, their journey, and their passion for dance."
   },
   "gallery": {
+    "type": "gallery",
     "text": "gallery",
 
     "title": "Gallery",
@@ -23,6 +25,7 @@
     ]
   },
   "press": {
+    "type": "press",
     "text": "press",
 
     "title": "Press",
@@ -35,14 +38,25 @@
     ]
   },
   "instagram": {
+    "type": "instagram",
     "text": "instagram",
 
     "title": "Instagram",
     "description": "Follow our Bachata trainer on Instagram to stay updated with the latest photos, videos, and stories from classes and events.",
     "sectionImage": "/images/instagram-section.jpg",
-    "link": "https://www.instagram.com/bachata_trainer"
+    "link": "https://www.instagram.com/bachata_trainer",
+    "images": [
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg"
+    ]
   },
   "speaking": {
+    "type": "speaking",
     "text": "speaking",
 
     "title": "Speaking",
@@ -51,6 +65,7 @@
     "images": ["/images/gallery.jpg", "/images/gallery.jpg"]
   },
   "contact": {
+    "type": "contact",
     "text": "contact",
     "title": "Contact",
     "description": "Get in touch with our Bachata trainer for inquiries about classes, private lessons, or events.",

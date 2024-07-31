@@ -1,4 +1,5 @@
 // components/Section.tsx
+import { observer } from "mobx-react-lite";
 import React from "react";
 
 type SectionProps = {
@@ -28,4 +29,4 @@ const Section = ({ text, onClick, sectionRef }: SectionProps) => {
   );
 };
 
-export default Section;
+export default observer(Section);
