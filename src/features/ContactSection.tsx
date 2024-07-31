@@ -1,7 +1,6 @@
 // components/PressSection1.tsx
 import React, { useState, useRef, useEffect } from "react";
 import Section from "../components/Section";
-import Image from "next/image";
 
 type ContactSectionProps = {
   data: any;
