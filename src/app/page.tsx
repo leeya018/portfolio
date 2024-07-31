@@ -1,10 +1,13 @@
 "use client";
 
+import AboutSection from "@/features/AboutSection";
 import Header from "@/components/Header";
 import Section from "@/components/Section";
-import SectionWithContent from "@/components/SectionWithContent";
 
 import React, { useRef } from "react";
+
+import data from "@/data/info.json";
+import GallerySection from "@/features/GallerySection";
 
 export default function HomePage() {
   const contentAboutRef = useRef<HTMLDivElement>(null);
@@ -18,15 +21,15 @@ export default function HomePage() {
       <Header />
       <main className="">
         {/* <AboutSection /> */}
-        <SectionWithContent
-          text={"about"}
+        <AboutSection
+          data={data.about}
           contentRef={contentAboutRef}
           sectionRef={sectionAboutRef}
         />
-        <SectionWithContent
-          text={"gallery"}
-          contentRef={contentGalleryRef}
-          sectionRef={sectionGalleryRef}
+        <GallerySection
+          data={data.gallery}
+          contentRef={contentAboutRef}
+          sectionRef={sectionAboutRef}
         />
       </main>
     </div>

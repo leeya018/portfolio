@@ -1,0 +1,55 @@
+{
+  "about": {
+    "title": "About",
+    "description": "Learn more about our experienced Bachata trainer, their journey, and their passion for dance.",
+    "sectionImage": "/images/about-section.jpg",
+    "lifeStory": "Learn more about our experienced Bachata trainer, their journey, and their passion for dance."
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Browse through our photo and video gallery showcasing incredible Bachata performances and classes.",
+    "sectionImage": "/images/gallery-section.jpg",
+    "images": [
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg",
+      "/images/gallery.jpg"
+    ]
+  },
+  "press": {
+    "title": "Press",
+    "description": "Read about our Bachata trainer's features in media, interviews, and articles highlighting their impact in the dance community.",
+    "sectionImage": "/images/press-section.jpg",
+    "gallery": [
+      "/images/press-gallery1.jpg",
+      "/images/press-gallery2.jpg",
+      "/images/press-gallery3.jpg"
+    ]
+  },
+  "instagram": {
+    "title": "Instagram",
+    "description": "Follow our Bachata trainer on Instagram to stay updated with the latest photos, videos, and stories from classes and events.",
+    "sectionImage": "/images/instagram-section.jpg",
+    "link": "https://www.instagram.com/bachata_trainer"
+  },
+  "speaking": {
+    "title": "Speaking",
+    "description": "Book our trainer for speaking engagements at dance workshops, seminars, or special events to share their knowledge and experience.",
+    "sectionImage": "/images/speaking-section.jpg",
+    "gallery": [
+      "/images/speaking-gallery1.jpg",
+      "/images/speaking-gallery2.jpg",
+      "/images/speaking-gallery3.jpg"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch with our Bachata trainer for inquiries about classes, private lessons, or events.",
+    "sectionImage": "/images/contact-section.jpg",
+    "email": "contact@bachatatrainer.com",
+    "phone": "+1-234-567-8901"
+  }
+}
