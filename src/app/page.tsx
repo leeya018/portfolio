@@ -2,20 +2,33 @@
 
 import Header from "@/components/Header";
 import Section from "@/components/Section";
-import React from "react";
+import SectionWithContent from "@/components/SectionWithContent";
+
+import React, { useRef } from "react";
 
 export default function HomePage() {
+  const contentAboutRef = useRef<HTMLDivElement>(null);
+  const sectionAboutRef = useRef<HTMLDivElement>(null);
+
+  const contentGalleryRef = useRef<HTMLDivElement>(null);
+  const sectionGalleryRef = useRef<HTMLDivElement>(null);
+
   return (
-    <>
+    <div className="h-screen relative">
       <Header />
-      <main className="pt-20">
-        <Section text="about" />
-        <Section text="gallery" />
-        <Section text="press" />
-        <Section text="instagram" />
-        <Section text="speaking" />
-        <Section text="contact" />
+      <main className="">
+        {/* <AboutSection /> */}
+        <SectionWithContent
+          text={"about"}
+          contentRef={contentAboutRef}
+          sectionRef={sectionAboutRef}
+        />
+        <SectionWithContent
+          text={"gallery"}
+          contentRef={contentGalleryRef}
+          sectionRef={sectionGalleryRef}
+        />
       </main>
-    </>
+    </div>
   );
 }
