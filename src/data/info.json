@@ -295,7 +295,8 @@
             "name": "Dating Success Ebook",
             "description": "Download our comprehensive guide to mastering the dating world, filled with practical tips and strategies.",
             "price": "₪150",
-            "url": "/images/products/images/datingBook.jpg"
+            "url": "/images/products/images/datingBook.jpg",
+            "itemAddress": "https://drive.google.com/file/d/1BU8IbXbQ5XtxQZtMV96csHB3R6NEOHuE/view?userstoinvite=shimi4865@gmail.com&ts=618fb108"
           },
           {
             "name": "Confidence Booster Audio Program",

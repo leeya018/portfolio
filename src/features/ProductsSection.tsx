@@ -51,7 +51,7 @@ const ProductsSection = ({ data }: ProductsSectionProps) => {
                     (product: any, productIndex: number) => (
                       <div
                         key={productIndex}
-                        className="rounded-lg p-6 border border-gray-700"
+                        className="rounded-lg p-6 border border-gray-700  flex flex-col justify-between"
                       >
                         <h4 className="text-lg font-semibold mb-2">
                           {product.name}
@@ -63,19 +63,26 @@ const ProductsSection = ({ data }: ProductsSectionProps) => {
                           {product.price}
                         </p>
                         <a
-                          href={product.url}
-                          className="text-blue-400 hover:underline"
+                          href={product.itemAddress}
+                          target="_blank"
+                          className={`${
+                            product.itemAddress
+                              ? "text-blue-400 hover:underline"
+                              : "text-gray-500"
+                          } `}
+                          // className="text-blue-400 hover:underline"
                         >
                           View Product
                         </a>
-                        <Image
-                          src={product.url}
-                          width={300}
-                          height={300}
-                          alt={product.name}
-                          className=" 
-                        "
-                        />
+                        <div className="">
+                          <Image
+                            width={300}
+                            height={300}
+                            src={product.url}
+                            alt={product.name}
+                            className="object-cover p-4 w-96 h-96 "
+                          />
+                        </div>
                       </div>
                     )
                   )}
