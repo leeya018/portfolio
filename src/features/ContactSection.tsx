@@ -28,13 +28,10 @@ const ContactSection = ({ data }: ContactSectionProps) => {
         <section
           id={data.type}
           ref={contentRef}
-          className="bg-black text-white py-20 px-8 min-h-screen"
+          className="bg-black text-white py-10 px-8 min-h-screen"
         >
-          <div className="flex w-full justify-center pt-20">
-            <button
-              onClick={scrollToSection}
-              className="p-5 flex rounded-full justify-center items-center border-2"
-            >
+          <div className="flex w-full justify-center mb-10 mt-20">
+            <button onClick={scrollToSection} className="circle-button">
               -
             </button>
           </div>

@@ -5,3 +5,7 @@
 nav {
   @apply font-light text-xl;
 }
+
+.circle-button {
+  @apply w-16 h-16 border-4 text-xl flex rounded-full justify-center items-center;
+}
