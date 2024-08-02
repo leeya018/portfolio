@@ -56,7 +56,7 @@ const ContactSection = ({ data }: ContactSectionProps) => {
                           return (
                             <li key={i} className="flex flex-col my-4">
                               {/* <FaInstagramSquare /> */}
-                              <a href={detail.url}>
+                              <Link href={detail.url} target="_blank">
                                 {React.createElement(
                                   Icons[detail.icon as keyof typeof Icons] ||
                                     Icons.FaQuestionCircle,
@@ -65,7 +65,7 @@ const ContactSection = ({ data }: ContactSectionProps) => {
                                     style: { color: detail.color }, // Use inline style for dynamic color
                                   }
                                 )}
-                              </a>
+                              </Link>
                             </li>
                           );
                         })}
