@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     >
       {isMenuOpen ? (
         <div className=" w-full flex justify-center items-center bg-black">
-          <nav className="flex space-x-8 items-center my-16 relative">
+          <nav className="flex space-x-8 items-center my-10 relative">
             <button
               onClick={() => {
                 scrollToSection("about");
@@ -41,30 +41,21 @@ const Header: React.FC = () => {
             </button>
             <button
               onClick={() => {
-                scrollToSection("press");
+                scrollToSection("content");
                 setIsMenuOpen(false);
               }}
               className="hover:text-gray-400"
             >
-              PRESS
+              CONTENT
             </button>
             <button
               onClick={() => {
-                scrollToSection("instagram");
+                scrollToSection("products");
                 setIsMenuOpen(false);
               }}
               className="hover:text-gray-400"
             >
-              INSTAGRAM
-            </button>
-            <button
-              onClick={() => {
-                scrollToSection("speaking");
-                setIsMenuOpen(false);
-              }}
-              className="hover:text-gray-400"
-            >
-              SPEAKING
+              PRODUCTS
             </button>
             <button
               onClick={() => {

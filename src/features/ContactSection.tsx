@@ -1,13 +1,16 @@
-// components/PressSection1.tsx
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import Section from "../components/Section";
-import useContent from "@/hooks/useContentHook";
 import { contentStore } from "@/store/contentStore";
 import { observer } from "mobx-react-lite";
+import useContent from "@/hooks/useContentHook";
+import * as Icons from "react-icons/fa";
+import { ModalStore } from "@/mobx/modalStore";
+import { modals } from "@/util";
 
 type ContactSectionProps = {
   data: any;
 };
+
 const ContactSection = ({ data }: ContactSectionProps) => {
   const { contentRef, sectionRef, scrollToContent, scrollToSection } =
     useContent(data);
@@ -17,14 +20,15 @@ const ContactSection = ({ data }: ContactSectionProps) => {
       <Section
         sectionRef={sectionRef}
         onClick={scrollToContent}
-        text={data.text}
+        id={data.type}
+        backgroundImage={data.backgroundImage}
       />
 
       {contentStore.name === data.type && (
         <section
           id={data.type}
           ref={contentRef}
-          className="bg-black text-white py-20 px-8  h-screen"
+          className="bg-black text-white py-20 px-8 min-h-screen"
         >
           <div className="flex w-full justify-center pt-20">
             <button
@@ -34,22 +38,58 @@ const ContactSection = ({ data }: ContactSectionProps) => {
               -
             </button>
           </div>
-          <div className="">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="col-span-1 md:col-span-2">
-                <h2 className="text-xl font-semibold mb-4">{data.title}</h2>
-                <p className="text-gray-300 mb-4">
-                  {data.description}
-                  {/* More text here */}
-                </p>
-                <p className="text-gray-300 mb-4">
-                  {data.email}
-                  {/* More text here */}
-                </p>
-                <p className="text-gray-300 mb-4">
-                  {data.phone}
-                  {/* More text here */}
-                </p>
+          <div className="container mx-auto">
+            <h2 className="text-2xl font-semibold mb-8 text-center">
+              {data.title}
+            </h2>
+            <p className="text-gray-300 mb-12 text-center">
+              {data.description}
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              <div className="space-y-8">
+                {data.contactMethods.map((method: any, index: number) => (
+                  <div key={index}>
+                    <h3 className="text-xl font-semibold">{method.method}</h3>
+                    {Array.isArray(method.details) ? (
+                      <ul className="text-gray-300 flex gap-5">
+                        {method.details.map((detail: any, i: number) => {
+                          return (
+                            <li key={i} className="flex flex-col my-4">
+                              {/* <FaInstagramSquare /> */}
+                              <a href={detail.url}>
+                                {React.createElement(
+                                  Icons[detail.icon as keyof typeof Icons] ||
+                                    Icons.FaQuestionCircle,
+                                  {
+                                    size: "2em",
+                                    style: { color: detail.color }, // Use inline style for dynamic color
+                                  }
+                                )}
+                              </a>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    ) : (
+                      <p className="text-gray-300">{method.details}</p>
+                    )}
+                    <p className="text-gray-500">{method.description}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-4">
+                  {data.location.title}
+                </h3>
+                <p className="text-gray-300">{data.location.address}</p>
+                <button
+                  onClick={() => ModalStore.openModal(modals.scedule)}
+                  className="w-full p-3 bg-blue-600 text-white rounded-md mt-10 "
+                >
+                  {data.meet.title}
+                </button>
               </div>
             </div>
           </div>

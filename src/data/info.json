@@ -239,6 +239,7 @@
   },
   "contact": {
     "type": "contact",
+    "backgroundImage": "/images/contact/bg.jpg",
 
     "title": "Get in Touch",
     "description": "We’re here to help you on your journey to dating success. Reach out to us with any questions, inquiries, or to book a session.",
@@ -263,15 +264,33 @@
         "details": [
           {
             "platform": "Facebook",
-            "url": "https://www.facebook.com/yourpage"
+            "url": "https://www.facebook.com/lee.yahav",
+            "icon": "FaFacebook",
+            "color": "#1877F2"
           },
           {
             "platform": "Instagram",
-            "url": "https://www.instagram.com/yourprofile"
+            "url": "https://www.instagram.com/leeyahav",
+            "icon": "FaInstagram",
+            "color": "#E4405F"
           },
           {
             "platform": "LinkedIn",
-            "url": "https://www.linkedin.com/in/yourprofile"
+            "url": "https://www.linkedin.com/in/leeyahav",
+            "icon": "FaLinkedin",
+            "color": "#0077B5"
+          },
+          {
+            "platform": "WhatsApp",
+            "url": "https://wa.me/+972542226958",
+            "icon": "FaWhatsapp",
+            "color": "#25D366"
+          },
+          {
+            "platform": "YouTube",
+            "url": "https://www.youtube.com/channel/UCOB9_h5Of9cwON2_DjQBt0A",
+            "icon": "FaYoutube",
+            "color": "#FF0000"
           }
         ],
         "description": "Follow us on social media and send us a message."
@@ -303,8 +322,11 @@
     },
     "location": {
       "title": "Our Location",
-      "address": "123 Main Street, Tel Aviv, Israel",
+      "address": "Bialik 54 Ramat Gan, Israel",
       "mapEmbedUrl": "https://maps.google.com/map_embed_link"
+    },
+    "meet": {
+      "title": "scedule meeting"
     }
   }
 }

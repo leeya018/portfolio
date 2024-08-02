@@ -6,3 +6,7 @@ export const contentTypes = {
   speaking: "speaking",
   contact: "contact",
 };
+
+export const modals = {
+  scedule: "scedule",
+};

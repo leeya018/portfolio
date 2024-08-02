@@ -14,19 +14,31 @@ import ContactSection from "@/features/ContactSection";
 import { observer } from "mobx-react-lite";
 import ContentSection from "@/features/ContentSection";
 import ProductsSection from "@/features/ProductsSection";
+import Modal from "@/components/Modal";
+import Calender from "@/components/Calender";
+import { ModalStore } from "@/mobx/modalStore";
+import { modals } from "@/util";
 
 const HomePage = () => {
   return (
     <div className="h-screen relative">
       <Header />
       <main className="">
+        <Modal
+          bgColor="bg-white"
+          isOpen={ModalStore.modalName === modals.scedule}
+          closeModal={ModalStore.closeModal}
+        >
+          <Calender />
+        </Modal>
+
         {/* <AboutSection /> */}
         <AboutSection data={data.about} />
         <GallerySection data={data.gallery} />
         <ContentSection data={data.content} />
         <ProductsSection data={data.products} />
-        {/* <InstagramSection data={data.instagram} />
-        <ContactSection data={data.contact} /> */}
+        <ContactSection data={data.contact} />
+        {/* <InstagramSection data={data.instagram} /> */}
       </main>
     </div>
   );
