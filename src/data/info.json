@@ -55,7 +55,12 @@
           "Belief that mastering communication is key to successful dating"
         ]
       },
-      "missionStatement": "Our mission is to empower men to overcome their fears and develop the skills necessary to navigate the dating world with confidence and authenticity."
+      "missionStatement": "Our mission is to empower men to overcome their fears and develop the skills necessary to navigate the dating world with confidence and authenticity.",
+      "myImage": {
+        "url": "/images/about/images/me.jpg",
+        "altText": "my Self",
+        "caption": "Image from Jerusalem"
+      }
     }
   },
   "gallery": {
@@ -69,17 +74,17 @@
         "sectionTitle": "Client Transformations",
         "images": [
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/clientTransformation/1.jpg",
             "altText": "Before and after transformation of a client",
             "caption": "From shy and uncertain to confident and charismatic."
           },
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/clientTransformation/2.jpg",
             "altText": "Client on a successful date",
             "caption": "Building meaningful connections with ease."
           },
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/clientTransformation/3.jpg",
             "altText": "Group workshop session",
             "caption": "Learning and growing together."
           }
@@ -89,12 +94,12 @@
         "sectionTitle": "Workshops & Events",
         "images": [
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/events/1.jpg",
             "altText": "Interactive workshop with clients",
             "caption": "Hands-on training to build dating confidence."
           },
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/events/2.jpg",
             "altText": "Mentor guiding clients in real-world scenarios",
             "caption": "Real-time practice to conquer fears."
           }
@@ -104,12 +109,12 @@
         "sectionTitle": "Client Achievements",
         "images": [
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/achivements/1.jpg",
             "altText": "Client celebrating a successful date",
             "caption": "Achieving personal milestones in dating."
           },
           {
-            "url": "/images/gallery/bg.jpg",
+            "url": "/images/gallery/images/achivements/2.jpg",
             "altText": "Testimonial video thumbnail",
             "caption": "Hear directly from our clients about their experiences."
           }

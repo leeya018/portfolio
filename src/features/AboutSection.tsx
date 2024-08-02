@@ -2,6 +2,7 @@ import Section from "@/components/Section";
 import useContent from "@/hooks/useContentHook";
 import { contentStore } from "@/store/contentStore";
 import { observer } from "mobx-react-lite";
+import Image from "next/image";
 import React from "react";
 
 type AboutSectionProps = {
@@ -95,6 +96,14 @@ const AboutSection = ({ data }: AboutSectionProps) => {
                 <p className="text-gray-300 mb-4">
                   {data.content.missionStatement}
                 </p>
+                <Image
+                  src={data.content.myImage.url}
+                  width={300}
+                  height={300}
+                  alt={data.content.myImage.altText}
+                  className="object-cover p-4 w-full 
+                        "
+                />
               </div>
             </div>
           </div>

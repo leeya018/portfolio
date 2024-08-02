@@ -53,14 +53,17 @@ const GallerySection = ({ data }: GallerySectionProps) => {
                   {section.images.map((image: any, imageIndex: number) => (
                     <div
                       key={imageIndex}
-                      className="rounded-lg overflow-hidden"
+                      className="rounded-lg overflow-hidden text-white"
                     >
                       <Image
                         src={image.url}
+                        // src={"/images/gallery/bg.jpg"}
                         width={300}
                         height={300}
                         alt={image.altText}
-                        className="object-cover w-full h-full transform transition-transform duration-300 hover:scale-105"
+                        className="object-cover w-full 
+                        h-full transform transition-transform 
+                        duration-300 hover:scale-105"
                       />
                       <div className="text-center mt-2">
                         <p className="text-lg font-medium">{image.caption}</p>
