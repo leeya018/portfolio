@@ -20,8 +20,8 @@ const HomePage = () => {
       <main className="">
         {/* <AboutSection /> */}
         <AboutSection data={data.about} />
-        {/* <GallerySection data={data.gallery} />
-        <PressSection data={data.press} />
+        <GallerySection data={data.gallery} />
+        {/* <PressSection data={data.press} />
         <InstagramSection data={data.instagram} />
         <SpeakingSection data={data.speaking} />
         <ContactSection data={data.contact} /> */}

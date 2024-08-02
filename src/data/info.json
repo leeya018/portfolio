@@ -2,6 +2,7 @@
   "about": {
     "type": "about",
     "title": "About Us",
+    "backgroundImage": "/images/about/bg.jpg",
     "content": {
       "intro": "Welcome to our platform, where we help men build the confidence and skills they need to attract and connect with the women they desire.",
       "targetAudience": {
@@ -58,6 +59,9 @@
     }
   },
   "gallery": {
+    "type": "gallery",
+    "backgroundImage": "/images/gallery/bg.jpg",
+
     "title": "Success Stories Gallery",
     "description": "Explore the journeys of men who transformed their dating lives with our guidance. Each image tells a story of personal growth, confidence, and connection.",
     "sections": [
@@ -65,17 +69,17 @@
         "sectionTitle": "Client Transformations",
         "images": [
           {
-            "url": "path_to_image1.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Before and after transformation of a client",
             "caption": "From shy and uncertain to confident and charismatic."
           },
           {
-            "url": "path_to_image2.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Client on a successful date",
             "caption": "Building meaningful connections with ease."
           },
           {
-            "url": "path_to_image3.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Group workshop session",
             "caption": "Learning and growing together."
           }
@@ -85,12 +89,12 @@
         "sectionTitle": "Workshops & Events",
         "images": [
           {
-            "url": "path_to_image4.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Interactive workshop with clients",
             "caption": "Hands-on training to build dating confidence."
           },
           {
-            "url": "path_to_image5.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Mentor guiding clients in real-world scenarios",
             "caption": "Real-time practice to conquer fears."
           }
@@ -100,12 +104,12 @@
         "sectionTitle": "Client Achievements",
         "images": [
           {
-            "url": "path_to_image6.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Client celebrating a successful date",
             "caption": "Achieving personal milestones in dating."
           },
           {
-            "url": "path_to_image7.jpg",
+            "url": "/images/gallery/bg.jpg",
             "altText": "Testimonial video thumbnail",
             "caption": "Hear directly from our clients about their experiences."
           }
@@ -114,6 +118,8 @@
     ]
   },
   "content": {
+    "type": "content",
+
     "title": "Expert Advice & Resources",
     "description": "Empowering you with the knowledge and tools to succeed in your dating life. Explore our articles, videos, and resources designed to boost your confidence and improve your communication skills.",
     "categories": [
@@ -171,6 +177,8 @@
     ]
   },
   "products": {
+    "type": "products",
+
     "title": "Our Services & Programs",
     "description": "Transform your dating life with our tailored coaching programs and resources. Choose the right service for your needs and start your journey to success.",
     "categories": [
@@ -240,6 +248,8 @@
     ]
   },
   "contact": {
+    "type": "contact",
+
     "title": "Get in Touch",
     "description": "We’re here to help you on your journey to dating success. Reach out to us with any questions, inquiries, or to book a session.",
     "contactMethods": [

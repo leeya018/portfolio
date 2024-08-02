@@ -18,6 +18,7 @@ const AboutSection = ({ data }: AboutSectionProps) => {
         sectionRef={sectionRef}
         onClick={scrollToContent}
         id={data.type}
+        backgroundImage={data.backgroundImage}
       />
 
       {contentStore.name === data.type && (

@@ -6,14 +6,20 @@ type SectionProps = {
   id: string;
   onClick: any;
   sectionRef: any;
+  backgroundImage: string;
 };
-const Section = ({ id, onClick, sectionRef }: SectionProps) => {
+const Section = ({
+  id,
+  onClick,
+  sectionRef,
+  backgroundImage,
+}: SectionProps) => {
   return (
     <section
       ref={sectionRef}
       id={id}
       className="relative h-screen bg-cover bg-center flex justify-center items-center text-white"
-      style={{ backgroundImage: `url(/images/${id}.jpg)` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <h1 className="relative z-10 text-8xl font-bold">{id.toUpperCase()}</h1>
