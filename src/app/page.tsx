@@ -18,6 +18,7 @@ import Modal from "@/components/Modal";
 import Calender from "@/components/Calender";
 import { ModalStore } from "@/mobx/modalStore";
 import { modals } from "@/util";
+import Article from "@/components/Article";
 
 const HomePage = () => {
   return (

@@ -136,13 +136,51 @@
             "type": "article",
             "title": "How to Approach Women with Confidence",
             "summary": "Learn effective techniques to approach women without fear and make a strong first impression.",
-            "url": "path_to_article1.html"
+            "url": "path_to_article1.html",
+            "article": {
+              "title": "Achieve Your Goals with Women: Overcome Fear and Build Confidence",
+              "intro": "If you're struggling to approach women, communicate effectively, or take relationships to the next level, you're not alone. Many men face these challenges, but with the right guidance, you can transform your dating life.",
+              "painPoints": [
+                "Fear of approaching women.",
+                "Not knowing what to say when initiating conversations.",
+                "Inability to maintain engaging conversations.",
+                "Fear of rejection during the initial encounter.",
+                "Difficulty progressing dates into meaningful relationships."
+              ],
+              "desires": [
+                "Become a man who effortlessly attracts women.",
+                "Develop strong confidence in social situations.",
+                "Master the art of flirtation and communication.",
+                "Enjoy interacting with women and building connections.",
+                "Gain the ability to turn dates into deeper relationships."
+              ],
+              "transformation": "After working with us, you'll feel empowered, confident, and ready to approach any woman in any situation. You'll learn how to communicate authentically, maintain meaningful conversations, and lead interactions toward the outcomes you desire. Imagine being able to confidently express your desires and navigate the dating world with ease."
+            }
           },
           {
-            "type": "video",
+            "type": "article",
             "title": "Mastering the Art of Conversation",
             "summary": "Watch this video to discover how to keep conversations flowing naturally and avoid awkward silences.",
-            "url": "path_to_video1.html"
+            "url": "path_to_video1.html",
+            "article": {
+              "title": "Mastering the Art of Conversation",
+              "intro": "Conversations are the building blocks of meaningful relationships, both personal and professional. Mastering the art of conversation can open doors to new opportunities, deepen connections, and improve your social life. Whether you struggle with keeping a conversation flowing or want to enhance your communication skills, understanding key techniques can make all the difference.",
+              "painPoints": [
+                "Feeling anxious or nervous when starting a conversation.",
+                "Struggling to keep the conversation engaging and interesting.",
+                "Not knowing how to respond or what to say next during a conversation.",
+                "Experiencing awkward silences and not knowing how to recover from them.",
+                "Difficulty connecting with others on a deeper level."
+              ],
+              "desires": [
+                "Initiate conversations confidently in any setting.",
+                "Maintain engaging and lively discussions with ease.",
+                "Respond naturally and effectively to keep the conversation going.",
+                "Navigate through awkward moments and silences smoothly.",
+                "Build deeper and more meaningful connections with others."
+              ],
+              "transformation": "By mastering the art of conversation, you'll feel at ease in social settings, able to initiate and maintain engaging discussions with anyone you meet. You'll develop the ability to connect with others on a deeper level, turning simple exchanges into meaningful interactions. This newfound skill will boost your confidence, enhance your social life, and open up new opportunities in both personal and professional relationships."
+            }
           }
         ]
       },
@@ -153,13 +191,51 @@
             "type": "article",
             "title": "Building Self-Confidence from Within",
             "summary": "Understand the importance of self-esteem in dating and learn practical tips to boost your confidence.",
-            "url": "path_to_article2.html"
+            "url": "path_to_article2.html",
+            "article": {
+              "title": "Building Self-Confidence from Within",
+              "intro": "Self-confidence is the foundation of success and happiness. It's what empowers you to take on challenges, pursue your goals, and build meaningful relationships. However, true self-confidence comes from within, not from external validation. This article explores the journey of building lasting self-confidence by focusing on internal growth and self-acceptance.",
+              "painPoints": [
+                "Relying on external validation to feel confident.",
+                "Struggling with self-doubt and negative self-talk.",
+                "Avoiding new opportunities due to fear of failure.",
+                "Feeling insecure in social situations or when meeting new people.",
+                "Difficulty asserting yourself and expressing your true feelings."
+              ],
+              "desires": [
+                "Develop a strong sense of self-worth that isn't dependent on others' opinions.",
+                "Overcome self-doubt and replace negative thoughts with empowering beliefs.",
+                "Embrace challenges with confidence and resilience.",
+                "Feel secure and at ease in social interactions.",
+                "Assert yourself with clarity and confidence, expressing your authentic self."
+              ],
+              "transformation": "By focusing on building self-confidence from within, you'll cultivate an unshakeable belief in yourself that remains steady regardless of external circumstances. You'll learn to silence the inner critic, embrace your strengths, and face life's challenges with courage. This inner transformation will empower you to live authentically, pursue your dreams, and connect with others on a deeper level, ultimately leading to a more fulfilled and confident life."
+            }
           },
           {
-            "type": "ebook",
+            "type": "article",
             "title": "The Complete Guide to Overcoming Fear of Rejection",
             "summary": "Download our comprehensive guide to tackle rejection anxiety and approach dating with a positive mindset.",
-            "url": "path_to_ebook.html"
+            "url": "path_to_ebook.html",
+            "article": {
+              "title": "The Complete Guide to Overcoming Fear of Rejection",
+              "intro": "Fear of rejection is a common and natural feeling, but it can hold you back from pursuing opportunities, building relationships, and reaching your full potential. Whether it's in your personal life or professional endeavors, learning to overcome this fear is crucial for personal growth and success. This guide provides practical strategies to help you face and conquer the fear of rejection, empowering you to take risks and embrace life's opportunities with confidence.",
+              "painPoints": [
+                "Avoiding new opportunities due to the fear of being rejected.",
+                "Feeling paralyzed or anxious at the thought of asking for what you want.",
+                "Experiencing low self-esteem and negative self-talk after facing rejection.",
+                "Struggling to move forward after being rejected in personal or professional situations.",
+                "Letting the fear of rejection prevent you from building meaningful relationships."
+              ],
+              "desires": [
+                "Build resilience and confidence to face rejection without fear.",
+                "Develop a healthy mindset that views rejection as a learning experience.",
+                "Learn to take risks and pursue opportunities without the fear of rejection holding you back.",
+                "Cultivate self-compassion and positive self-talk to maintain self-esteem after rejection.",
+                "Foster the ability to bounce back quickly and continue striving towards your goals."
+              ],
+              "transformation": "By following the strategies in this guide, you'll transform your relationship with rejection, viewing it not as a setback but as a stepping stone toward growth. You'll gain the confidence to take risks, pursue your goals, and approach situations with a resilient mindset. This shift will allow you to embrace challenges, build stronger relationships, and ultimately lead a more fearless and fulfilling life."
+            }
           }
         ]
       },
@@ -167,16 +243,16 @@
         "categoryTitle": "Success Stories",
         "contentItems": [
           {
-            "type": "testimonial",
-            "title": "How I Turned My Dating Life Around",
+            "type": "video",
+            "title": "Why Men are feeling the need to satisfy women",
             "summary": "Read this inspiring story of a client who transformed his dating experiences after working with us.",
-            "url": "path_to_testimonial1.html"
+            "url": "https://youtu.be/TF_I4Lht-zE"
           },
           {
-            "type": "caseStudy",
-            "title": "Case Study: From Nervous to Natural",
+            "type": "video",
+            "title": "How to generate a positive thinking with women",
             "summary": "Explore a detailed case study of a client's journey from anxiety to confidence in dating.",
-            "url": "path_to_case_study1.html"
+            "url": "https://youtu.be/TA__0u6ZKBY"
           }
         ]
       }
@@ -246,19 +322,15 @@
     "contactMethods": [
       {
         "method": "Phone",
-        "details": "+972-123-456-789",
+        "details": "+972-54-222-6958",
         "description": "Call us for immediate assistance or to schedule a consultation."
       },
       {
         "method": "Email",
-        "details": "info@yourwebsite.com",
+        "details": "leeyahav018@gmail.com",
         "description": "Send us an email and we’ll get back to you within 24 hours."
       },
-      {
-        "method": "WhatsApp",
-        "details": "+972-123-456-789",
-        "description": "Message us on WhatsApp for quick responses and support."
-      },
+
       {
         "method": "Social Media",
         "details": [
@@ -296,6 +368,11 @@
         "description": "Follow us on social media and send us a message."
       }
     ],
+    "officeImage": {
+      "url": "/images/contact/images/office.jpg",
+      "altText": "office",
+      "caption": "office of the company "
+    },
     "contactForm": {
       "title": "Contact Form",
       "description": "Fill out the form below and we’ll get back to you as soon as possible.",
@@ -323,7 +400,7 @@
     "location": {
       "title": "Our Location",
       "address": "Bialik 54 Ramat Gan, Israel",
-      "mapEmbedUrl": "https://maps.google.com/map_embed_link"
+      "link": "https://www.google.com/maps/place/Bialik+St+54,+Ramat+Gan/@32.0843801,34.8110857,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4bcbc38e8c8d:0xbcbb78b9c199fab1!8m2!3d32.0843756!4d34.8136606!16s%2Fg%2F11dzmk31bj?entry=ttu"
     },
     "meet": {
       "title": "scedule meeting"

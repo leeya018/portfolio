@@ -6,6 +6,8 @@ import useContent from "@/hooks/useContentHook";
 import * as Icons from "react-icons/fa";
 import { ModalStore } from "@/mobx/modalStore";
 import { modals } from "@/util";
+import Image from "next/image";
+import Link from "next/link";
 
 type ContactSectionProps = {
   data: any;
@@ -74,19 +76,35 @@ const ContactSection = ({ data }: ContactSectionProps) => {
                     <p className="text-gray-500">{method.description}</p>
                   </div>
                 ))}
+                <button
+                  onClick={() => ModalStore.openModal(modals.scedule)}
+                  className="w-[70%] p-3 bg-blue-600 text-white rounded-md mt-10  "
+                >
+                  {data.meet.title}
+                </button>
               </div>
 
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-4">
                   {data.location.title}
                 </h3>
-                <p className="text-gray-300">{data.location.address}</p>
-                <button
-                  onClick={() => ModalStore.openModal(modals.scedule)}
-                  className="w-full p-3 bg-blue-600 text-white rounded-md mt-10 "
+                <p className="mb-4 text-gray-300">{data.location.address}</p>
+                <Link
+                  href={data.location.link}
+                  target="_blank"
+                  className=" underline text-blue-500 hover:text-blue-600"
                 >
-                  {data.meet.title}
-                </button>
+                  {data.location.title}
+                </Link>
+                <div>
+                  <Image
+                    src={data.officeImage.url}
+                    width={300}
+                    height={300}
+                    alt={data.officeImage.altText}
+                    className="object-cover w-full mt-10 "
+                  />
+                </div>
               </div>
             </div>
           </div>

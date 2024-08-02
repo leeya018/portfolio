@@ -9,4 +9,5 @@ export const contentTypes = {
 
 export const modals = {
   scedule: "scedule",
+  article: "article",
 };

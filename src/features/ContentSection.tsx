@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+
 import Section from "../components/Section";
 import { contentStore } from "@/store/contentStore";
 import { observer } from "mobx-react-lite";
 import useContent from "@/hooks/useContentHook";
+import Modal from "@/components/Modal";
+import { ModalStore } from "@/mobx/modalStore";
+import { modals } from "@/util";
+import { Article } from "@/interfaces/Article";
+import ArticleCard from "@/components/ArticleCard";
+import Link from "next/link";
 
 type ContentCenterProps = {
   data: any;
@@ -12,8 +19,21 @@ const ContentCenter = ({ data }: ContentCenterProps) => {
   const { contentRef, sectionRef, scrollToContent, scrollToSection } =
     useContent(data);
 
+  const [chosenArticle, setChosenArticle] = useState<Article | null>(null);
+
   return (
     <>
+      <Modal
+        bgColor="bg-white"
+        isOpen={
+          ModalStore.modalName === modals.article && chosenArticle !== null
+        }
+        // isOpen={true}
+        closeModal={ModalStore.closeModal}
+      >
+        <ArticleCard article={chosenArticle} />
+      </Modal>
+
       <Section
         sectionRef={sectionRef}
         onClick={scrollToContent}
@@ -55,16 +75,32 @@ const ContentCenter = ({ data }: ContentCenterProps) => {
                         {item.title}
                       </h4>
                       <p className="text-gray-300 mb-4">{item.summary}</p>
-                      <a
-                        href={item.url}
-                        className="text-blue-400 hover:underline"
-                      >
-                        {item.type === "article" && "Read Article"}
-                        {item.type === "video" && "Watch Video"}
-                        {item.type === "ebook" && "Download Ebook"}
+
+                      {/* {item.type === "ebook" && "Download Ebook"}
                         {item.type === "testimonial" && "Read Testimonial"}
-                        {item.type === "caseStudy" && "Read Case Study"}
-                      </a>
+                        {item.type === "caseStudy" && "Read Case Study"} */}
+                      {item.type === "article" && (
+                        <button
+                          // href={item.url}
+                          className="text-blue-400 hover:underline"
+                          onClick={() => {
+                            setChosenArticle(item.article);
+                            ModalStore.openModal(modals.article);
+                          }}
+                        >
+                          Read Article
+                        </button>
+                      )}
+
+                      {item.type === "video" && (
+                        <Link
+                          target="_blank"
+                          href={item.url}
+                          className="text-blue-400 hover:underline"
+                        >
+                          Watch Video
+                        </Link>
+                      )}
                     </div>
                   ))}
                 </div>
