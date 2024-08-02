@@ -124,6 +124,7 @@
   },
   "content": {
     "type": "content",
+    "backgroundImage": "/images/content/bg.jpg",
 
     "title": "Expert Advice & Resources",
     "description": "Empowering you with the knowledge and tools to succeed in your dating life. Explore our articles, videos, and resources designed to boost your confidence and improve your communication skills.",
@@ -183,6 +184,7 @@
   },
   "products": {
     "type": "products",
+    "backgroundImage": "/images/products/bg.jpg",
 
     "title": "Our Services & Programs",
     "description": "Transform your dating life with our tailored coaching programs and resources. Choose the right service for your needs and start your journey to success.",
@@ -194,19 +196,19 @@
             "name": "One-on-One Coaching",
             "description": "Personalized coaching sessions focused on building your confidence, communication skills, and approach strategies.",
             "price": "₪2,000 per month",
-            "url": "path_to_product1.html"
+            "url": "/images/products/images/one-on-one.jpg"
           },
           {
             "name": "Group Workshops",
             "description": "Interactive group sessions where you'll learn and practice dating skills in a supportive environment.",
             "price": "₪500 per workshop",
-            "url": "path_to_product2.html"
+            "url": "/images/products/images/group-workshop.jpg"
           },
           {
             "name": "Online Coaching Package",
             "description": "Access our online coaching sessions, which include video tutorials, exercises, and personalized feedback.",
             "price": "₪1,200 for 3 months",
-            "url": "path_to_product3.html"
+            "url": "/images/products/images/online-coach-package.jpg"
           }
         ]
       },
@@ -217,36 +219,19 @@
             "name": "Dating Success Ebook",
             "description": "Download our comprehensive guide to mastering the dating world, filled with practical tips and strategies.",
             "price": "₪150",
-            "url": "path_to_product4.html"
+            "url": "/images/products/images/datingBook.jpg"
           },
           {
             "name": "Confidence Booster Audio Program",
             "description": "Listen to our curated audio program designed to boost your confidence and mindset in dating.",
             "price": "₪100",
-            "url": "path_to_product5.html"
+            "url": "/images/products/images/confidence-booster-audio.jpg"
           },
           {
             "name": "Flirting Mastery Video Course",
             "description": "A step-by-step video course that teaches you the art of flirting and creating attraction.",
             "price": "₪300",
-            "url": "path_to_product6.html"
-          }
-        ]
-      },
-      {
-        "categoryTitle": "Special Packages",
-        "products": [
-          {
-            "name": "Ultimate Dating Success Package",
-            "description": "Our all-inclusive package that combines one-on-one coaching, group workshops, and digital products for a complete transformation.",
-            "price": "₪4,500",
-            "url": "path_to_product7.html"
-          },
-          {
-            "name": "Quick Start Package",
-            "description": "A starter package that includes an introductory coaching session and our top digital products to kickstart your journey.",
-            "price": "₪1,800",
-            "url": "path_to_product8.html"
+            "url": "/images/products/images/flirting-mastery.jpg"
           }
         ]
       }
