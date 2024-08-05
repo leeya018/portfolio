@@ -19,14 +19,14 @@ const Header: React.FC = () => {
      flex justify-center"
     >
       {isMenuOpen ? (
-        <div className=" w-full flex justify-center items-center bg-black">
-          <nav className="flex space-x-8 items-center my-10 relative">
+        <div className=" w-full flex  justify-center items-center bg-black">
+          <nav className="flex space-x-8 items-center my-10 relative flex-col md:flex-row">
             <button
               onClick={() => {
                 scrollToSection("about");
                 setIsMenuOpen(false);
               }}
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 "
             >
               ABOUT
             </button>
@@ -76,12 +76,21 @@ const Header: React.FC = () => {
           </button>
         </div>
       ) : (
-        <div className="w-full flex justify-end mx-10 mt-12">
+        <div className="invisible md:visible w-full flex justify-end mx-10 mt-12">
           <button onClick={toggleMenu} className="text-4xl re">
             &#9776;
           </button>
         </div>
       )}
+
+      <div className="md:invisible w-full absolute  ">
+        <button
+          onClick={toggleMenu}
+          className="text-4xl relative re top-3 left-3"
+        >
+          &#9776;
+        </button>
+      </div>
     </header>
   );
 };
