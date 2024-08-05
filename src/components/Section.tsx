@@ -23,7 +23,9 @@ const Section = ({
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <h1 className="relative z-10 text-8xl font-bold">{id.toUpperCase()}</h1>
+      <h1 className="relative z-10 text-5xl md:text-6xl  font-bold">
+        {id.toUpperCase()}
+      </h1>
       <div className="absolute bottom-8 z-10">
         <button onClick={onClick} className="circle-button">
           &#43;

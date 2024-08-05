@@ -76,12 +76,14 @@ const ContactSection = ({ data }: ContactSectionProps) => {
                     <p className="text-gray-500">{method.description}</p>
                   </div>
                 ))}
-                <button
-                  onClick={() => ModalStore.openModal(modals.scedule)}
-                  className="w-[70%] p-3 bg-blue-600 text-white rounded-md mt-10  "
-                >
-                  {data.meet.title}
-                </button>
+                <div className="w-full flex justify-center md:justify-start">
+                  <button
+                    onClick={() => ModalStore.openModal(modals.scedule)}
+                    className="w-[70%] p-3 bg-blue-600 text-white rounded-md mt-10  "
+                  >
+                    {data.meet.title}
+                  </button>
+                </div>
               </div>
 
               <div className="text-center">
