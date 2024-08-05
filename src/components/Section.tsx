@@ -18,7 +18,8 @@ const Section = ({
     <section
       ref={sectionRef}
       id={id}
-      className="relative h-[90vh] bg-cover bg-center flex justify-center items-center text-white"
+      className="relative h-[90vh] w-screen
+      overflow-x-hidden  bg-cover bg-center flex justify-center items-center text-white"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>

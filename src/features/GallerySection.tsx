@@ -26,7 +26,7 @@ const GallerySection = ({ data }: GallerySectionProps) => {
         <section
           id={data.type}
           ref={contentRef}
-          className="bg-black text-white py-10 px-8 min-h-screen"
+          className="bg-black text-white py-10 px-8 min-h-screen max-w-screen overflow-x-hidden"
         >
           <div className="flex w-full justify-center mb-10 mt-20">
             <button onClick={scrollToSection} className="circle-button">
