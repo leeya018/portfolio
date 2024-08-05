@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
       <div className="md:invisible w-full absolute  ">
         <button
           onClick={toggleMenu}
-          className="text-4xl relative re top-3 left-3"
+          className="text-4xl absolute re top-3 right-3"
         >
           &#9776;
         </button>
