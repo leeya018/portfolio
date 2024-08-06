@@ -18,6 +18,7 @@ const GallerySection = ({ data }: GallerySectionProps) => {
   return (
     <>
       <Section
+        title={t(`headerText`)}
         sectionRef={sectionRef}
         onClick={scrollToContent}
         id={t(`type`)}

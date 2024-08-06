@@ -4,6 +4,7 @@ import { contentStore } from "@/store/contentStore";
 import { observer } from "mobx-react-lite";
 import useContent from "@/hooks/useContentHook";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type ProductsSectionProps = {
   data: any;
@@ -12,19 +13,21 @@ type ProductsSectionProps = {
 const ProductsSection = ({ data }: ProductsSectionProps) => {
   const { contentRef, sectionRef, scrollToContent, scrollToSection } =
     useContent(data);
+  const t = useTranslations("products");
 
   return (
     <>
       <Section
+        title={t(`headerText`)}
         sectionRef={sectionRef}
         onClick={scrollToContent}
-        id={data.type}
-        backgroundImage={data.backgroundImage}
+        id={t(`type`)}
+        backgroundImage={t(`backgroundImage`)}
       />
 
-      {contentStore.name === data.type && (
+      {contentStore.name === t(`type`) && (
         <section
-          id={data.type}
+          id={t(`type`)}
           ref={contentRef}
           className="bg-black text-white py-10 px-8 min-h-screen"
         >
@@ -35,10 +38,10 @@ const ProductsSection = ({ data }: ProductsSectionProps) => {
           </div>
           <div className="container mx-auto">
             <h2 className="text-2xl font-semibold mb-8 text-center">
-              {data.title}
+              {t(`title`)}
             </h2>
             <p className="text-gray-300 mb-12 text-center">
-              {data.description}
+              {t(`description`)}
             </p>
 
             {data.categories.map((category: any, categoryIndex: number) => (

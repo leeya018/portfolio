@@ -10,6 +10,7 @@ import { modals } from "@/util";
 import { Article } from "@/interfaces/Article";
 import ArticleCard from "@/components/ArticleCard";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 type ContentCenterProps = {
   data: any;
@@ -18,6 +19,7 @@ type ContentCenterProps = {
 const ContentCenter = ({ data }: ContentCenterProps) => {
   const { contentRef, sectionRef, scrollToContent, scrollToSection } =
     useContent(data);
+  const t = useTranslations("content");
 
   const [chosenArticle, setChosenArticle] = useState<Article | null>(null);
 
@@ -35,15 +37,16 @@ const ContentCenter = ({ data }: ContentCenterProps) => {
       </Modal>
 
       <Section
+        title={t(`headerText`)}
         sectionRef={sectionRef}
         onClick={scrollToContent}
-        id={data.type}
-        backgroundImage={data.backgroundImage}
+        id={t(`type`)}
+        backgroundImage={t(`backgroundImage`)}
       />
 
-      {contentStore.name === data.type && (
+      {contentStore.name === t(`type`) && (
         <section
-          id={data.type}
+          id={t(`type`)}
           ref={contentRef}
           className="bg-black text-white py-10 px-8 min-h-screen"
         >
@@ -54,10 +57,10 @@ const ContentCenter = ({ data }: ContentCenterProps) => {
           </div>
           <div className="container mx-auto">
             <h2 className="text-2xl font-semibold mb-8 text-center">
-              {data.title}
+              {t(`title`)}
             </h2>
             <p className="text-gray-300 mb-12 text-center">
-              {data.description}
+              {t(`description`)}
             </p>
 
             {data.categories.map((category: any, categoryIndex: number) => (
@@ -76,9 +79,6 @@ const ContentCenter = ({ data }: ContentCenterProps) => {
                       </h4>
                       <p className="text-gray-300 mb-4">{item.summary}</p>
 
-                      {/* {item.type === "ebook" && "Download Ebook"}
-                        {item.type === "testimonial" && "Read Testimonial"}
-                        {item.type === "caseStudy" && "Read Case Study"} */}
                       {item.type === "article" && (
                         <button
                           // href={item.url}

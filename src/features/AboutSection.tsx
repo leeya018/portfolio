@@ -15,7 +15,7 @@ const AboutSection = ({ data }: AboutSectionProps) => {
     useContent(data);
   const t = useTranslations("about");
 
-  const contentItems = Object.keys(t.raw("content"));
+  // const contentItems = Object.keys(t.raw("content"));
 
   return (
     <>
@@ -23,10 +23,11 @@ const AboutSection = ({ data }: AboutSectionProps) => {
         sectionRef={sectionRef}
         onClick={scrollToContent}
         id={t(`type`)}
+        title={t(`headerText`)}
         backgroundImage={t(`backgroundImage`)}
       />
 
-      {contentStore.name === data.type && (
+      {contentStore.name === t(`type`) && (
         <section
           id={data.type}
           ref={contentRef}

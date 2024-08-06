@@ -28,9 +28,8 @@ const HomePage = () => {
   return (
     <>
       <div className="h-screen relative">
-        <LangSwitcher />
-        {/* <Header /> */}
-        <main className="mt-40">
+        <Header />
+        <main className="">
           {/* <Modal
           bgColor="bg-white"
           isOpen={ModalStore.modalName === modals.scedule}
@@ -39,11 +38,11 @@ const HomePage = () => {
           <Calender />
         </Modal> */}
 
-          {/* <AboutSection data={data.about} /> */}
+          <AboutSection data={data.about} />
           <GallerySection data={data.gallery} />
-          {/* <ContentSection data={data.content} />
-        <ProductsSection data={data.products} />
-        <ContactSection data={data.contact} /> */}
+          <ContentSection data={data.content} />
+          <ProductsSection data={data.products} />
+          <ContactSection data={data.contact} />
         </main>
       </div>
       {/* <div>{t(`title`)}</div> */}

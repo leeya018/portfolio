@@ -1,6 +1,7 @@
 {
   "about": {
-    "type": "Sobre",
+    "type": "about",
+    "headerText": "Sobre",
     "title": "Sobre Nosotros",
     "backgroundImage": "/images/about/bg.jpg",
     "content": {
@@ -65,6 +66,7 @@
   },
   "gallery": {
     "type": "gallery",
+    "headerText": "gallery",
     "backgroundImage": "/images/gallery/bg.jpg",
     "title": "Galería de Historias de Éxito",
     "description": "Explora los viajes de hombres que transformaron sus vidas amorosas con nuestra guía. Cada imagen cuenta una historia de crecimiento personal, confianza y conexión.",
@@ -123,6 +125,7 @@
   },
   "content": {
     "type": "content",
+    "headerText": "Consejos",
     "backgroundImage": "/images/content/bg.jpg",
     "title": "Consejos y Recursos de Expertos",
     "description": "Empoderándote con el conocimiento y las herramientas para tener éxito en tu vida amorosa. Explora nuestros artículos, videos y recursos diseñados para aumentar tu confianza y mejorar tus habilidades de comunicación.",
@@ -258,6 +261,7 @@
   },
   "products": {
     "type": "products",
+    "headerText": "Productos",
     "backgroundImage": "/images/products/bg.jpg",
     "title": "Nuestros Servicios y Programas",
     "description": "Transforma tu vida amorosa con nuestros programas de coaching personalizados y recursos. Elige el servicio adecuado para tus necesidades y comienza tu viaje hacia el éxito.",
@@ -313,6 +317,7 @@
   },
   "contact": {
     "type": "contact",
+    "headerText": "Contáctanos",
     "backgroundImage": "/images/contact/bg.jpg",
     "title": "Contáctanos",
     "description": "Estamos aquí para ayudarte en tu camino hacia el éxito en las citas. Contáctanos con cualquier pregunta, consulta o para reservar una sesión.",

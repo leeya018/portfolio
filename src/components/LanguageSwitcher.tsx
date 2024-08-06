@@ -30,7 +30,8 @@ const LangSwitcher: React.FC = () => {
     <div className="flex items-center justify-center bg-gray-100">
       <div className="relative text-lg w-48">
         <button
-          className=" justify-between w-full border border-gray-500 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className=" justify-between w-full  
+           text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           onClick={() => setIsOptionsExpanded(!isOptionsExpanded)}
           onBlur={() => setIsOptionsExpanded(false)}
         >
@@ -58,7 +59,7 @@ const LangSwitcher: React.FC = () => {
               : "translate-y-0 scale-y-100 opacity-100"
           }`}
         >
-          <ul className="absolute left-0 right-0 mb-4 bg-white divide-y rounded-lg shadow-lg overflow-hidden">
+          <ul className="absolute left-0 right-0 mb-4 bg-white text-black divide-y rounded-lg shadow-lg overflow-hidden">
             {options.map((option, index) => (
               <li
                 key={index}

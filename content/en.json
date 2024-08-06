@@ -1,6 +1,7 @@
 {
   "about": {
     "type": "about",
+    "headerText": "about",
     "title": "About Us",
     "backgroundImage": "/images/about/bg.jpg",
     "content": {
@@ -65,6 +66,8 @@
   },
   "gallery": {
     "type": "gallery",
+    "headerText": "gallery",
+
     "backgroundImage": "/images/gallery/bg.jpg",
 
     "title": "Success Stories Gallery",
@@ -124,6 +127,8 @@
   },
   "content": {
     "type": "content",
+    "headerText": "content",
+
     "backgroundImage": "/images/content/bg.jpg",
 
     "title": "Expert Advice & Resources",
@@ -260,6 +265,8 @@
   },
   "products": {
     "type": "products",
+    "headerText": "products",
+
     "backgroundImage": "/images/products/bg.jpg",
 
     "title": "Our Services & Programs",
@@ -316,6 +323,8 @@
   },
   "contact": {
     "type": "contact",
+    "headerText": "contact",
+
     "backgroundImage": "/images/contact/bg.jpg",
 
     "title": "Get in Touch",

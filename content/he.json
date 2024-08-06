@@ -1,6 +1,7 @@
 {
   "about": {
     "type": "about",
+    "headerText": "עלי",
     "title": "אודותינו",
     "backgroundImage": "/images/about/bg.jpg",
     "content": {
@@ -65,6 +66,7 @@
   },
   "gallery": {
     "type": "gallery",
+    "headerText": "גלריה",
     "backgroundImage": "/images/gallery/bg.jpg",
     "title": "גלריית סיפורי הצלחה",
     "description": "גלה את המסעות של גברים שהפכו את חיי הדייטים שלהם בעזרת ההכוונה שלנו. כל תמונה מספרת סיפור של צמיחה אישית, ביטחון עצמי וחיבור.",
@@ -123,6 +125,8 @@
   },
   "content": {
     "type": "content",
+    "headerText": "תוכן",
+
     "backgroundImage": "/images/content/bg.jpg",
     "title": "עצות ומשאבים מומחים",
     "description": "מעצים אותך עם הידע והכלים להצליח בחיי הדייטים שלך. חקור את המאמרים, הווידאו והמשאבים שלנו שנועדו להעלות את הביטחון שלך ולשפר את כישורי התקשורת שלך.",
@@ -258,6 +262,8 @@
   },
   "products": {
     "type": "products",
+    "headerText": "פרוייקטים",
+
     "backgroundImage": "/images/products/bg.jpg",
     "title": "השירותים והתוכניות שלנו",
     "description": "הפוך את חיי הדייטים שלך עם תוכניות האימון המותאמות שלנו ומשאבים. בחר את השירות המתאים לצרכים שלך והתחל את המסע שלך להצלחה.",
@@ -313,6 +319,7 @@
   },
   "contact": {
     "type": "contact",
+    "headerText": "צור קשר",
     "backgroundImage": "/images/contact/bg.jpg",
     "title": "צרו קשר",
     "description": "אנחנו כאן כדי לעזור לך במסע שלך להצלחה בדייטינג. פנה אלינו עם כל שאלה, בירור או כדי לקבוע פגישה.",

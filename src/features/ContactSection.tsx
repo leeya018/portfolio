@@ -8,6 +8,7 @@ import { ModalStore } from "@/mobx/modalStore";
 import { modals } from "@/util";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 type ContactSectionProps = {
   data: any;
@@ -16,19 +17,21 @@ type ContactSectionProps = {
 const ContactSection = ({ data }: ContactSectionProps) => {
   const { contentRef, sectionRef, scrollToContent, scrollToSection } =
     useContent(data);
+  const t = useTranslations("contact");
 
   return (
     <>
       <Section
+        title={t(`headerText`)}
         sectionRef={sectionRef}
         onClick={scrollToContent}
-        id={data.type}
-        backgroundImage={data.backgroundImage}
+        id={t(`type`)}
+        backgroundImage={t(`backgroundImage`)}
       />
 
-      {contentStore.name === data.type && (
+      {contentStore.name === t(`type`) && (
         <section
-          id={data.type}
+          id={t(`type`)}
           ref={contentRef}
           className="bg-black text-white py-10 px-8 min-h-screen"
         >
@@ -39,17 +42,20 @@ const ContactSection = ({ data }: ContactSectionProps) => {
           </div>
           <div className="container mx-auto">
             <h2 className="text-2xl font-semibold mb-8 text-center">
-              {data.title}
+              {t(`title`)}
             </h2>
             <p className="text-gray-300 mb-12 text-center">
-              {data.description}
+              {t(`description`)}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div className="space-y-8">
                 {data.contactMethods.map((method: any, index: number) => (
                   <div key={index}>
-                    <h3 className="text-xl font-semibold">{method.method}</h3>
+                    <h3 className="text-xl font-semibold">
+                      {/* {t(`method.method.${[index]}`)} */}
+                      {method.method}
+                    </h3>
                     {Array.isArray(method.details) ? (
                       <ul className="text-gray-300 flex gap-5">
                         {method.details.map((detail: any, i: number) => {
@@ -81,29 +87,29 @@ const ContactSection = ({ data }: ContactSectionProps) => {
                     onClick={() => ModalStore.openModal(modals.scedule)}
                     className="w-[70%] p-3 bg-blue-600 text-white rounded-md mt-10  "
                   >
-                    {data.meet.title}
+                    {t(`meet.title`)}
                   </button>
                 </div>
               </div>
 
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-4">
-                  {data.location.title}
+                  {t(`location.title`)}
                 </h3>
-                <p className="mb-4 text-gray-300">{data.location.address}</p>
+                <p className="mb-4 text-gray-300">{t(`location.address`)}</p>
                 <Link
-                  href={data.location.link}
+                  href={t(`location.link`)}
                   target="_blank"
                   className=" underline text-blue-500 hover:text-blue-600"
                 >
-                  {data.location.title}
+                  {t(`location.title`)}
                 </Link>
                 <div>
                   <Image
-                    src={data.officeImage.url}
+                    src={t(`officeImage.url`)}
                     width={300}
                     height={300}
-                    alt={data.officeImage.altText}
+                    alt={t(`officeImage.altText`)}
                     className="object-cover w-full mt-10 "
                   />
                 </div>
