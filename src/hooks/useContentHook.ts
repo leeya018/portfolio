@@ -12,7 +12,14 @@ const useContent = (data: any) => {
   }, [contentStore.name]);
 
   const scrollToContent = () => {
-    contentStore.setName(data.type);
+    if (contentStore.name !== "") {
+      contentStore.setName("");
+      setTimeout(() => {
+        contentStore.setName(data.type);
+      }, 100);
+    } else {
+      contentStore.setName(data.type);
+    }
   };
 
   const scrollToSection = () => {
