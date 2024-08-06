@@ -39,9 +39,9 @@ const HomePage = () => {
           <Calender />
         </Modal> */}
 
-          <AboutSection data={data.about} />
-          {/* <GallerySection data={data.gallery} />
-        <ContentSection data={data.content} />
+          {/* <AboutSection data={data.about} /> */}
+          <GallerySection data={data.gallery} />
+          {/* <ContentSection data={data.content} />
         <ProductsSection data={data.products} />
         <ContactSection data={data.contact} /> */}
         </main>

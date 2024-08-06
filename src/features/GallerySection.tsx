@@ -4,6 +4,7 @@ import Image from "next/image";
 import { contentStore } from "@/store/contentStore";
 import { observer } from "mobx-react-lite";
 import useContent from "@/hooks/useContentHook";
+import { useTranslations } from "next-intl";
 
 type GallerySectionProps = {
   data: any;
@@ -12,19 +13,20 @@ type GallerySectionProps = {
 const GallerySection = ({ data }: GallerySectionProps) => {
   const { contentRef, sectionRef, scrollToContent, scrollToSection } =
     useContent(data);
+  const t = useTranslations("gallery");
 
   return (
     <>
       <Section
         sectionRef={sectionRef}
         onClick={scrollToContent}
-        id={data.type}
-        backgroundImage={data.backgroundImage}
+        id={t(`type`)}
+        backgroundImage={t(`backgroundImage`)}
       />
 
-      {contentStore.name === data.type && (
+      {contentStore.name === t(`type`) && (
         <section
-          id={data.type}
+          id={t(`type`)}
           ref={contentRef}
           className="bg-black text-white py-10 px-8 min-h-screen max-w-screen overflow-x-hidden"
         >
@@ -35,16 +37,17 @@ const GallerySection = ({ data }: GallerySectionProps) => {
           </div>
           <div className="container mx-auto">
             <h2 className="text-2xl font-semibold mb-8 text-center">
-              {data.title}
+              {t(`title`)}
             </h2>
             <p className="text-gray-300 mb-12 text-center">
-              {data.description}
+              {t(`description`)}
             </p>
 
             {data.sections.map((section: any, sectionIndex: number) => (
               <div key={sectionIndex} className="mb-16">
                 <h3 className="text-xl font-semibold mb-6">
                   {section.sectionTitle}
+                  {/* {t(`sections.${section.sectionTitle}`)} */}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {section.images.map((image: any, imageIndex: number) => (
