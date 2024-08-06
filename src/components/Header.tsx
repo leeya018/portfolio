@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import React, { useState, useEffect } from "react";
 
 const Header: React.FC = () => {

@@ -22,14 +22,32 @@ import { useTranslations } from "next-intl";
 import LangSwitcher from "@/components/LanguageSwitcher";
 
 const HomePage = () => {
-  const t = useTranslations("Home");
+  const t = useTranslations("about");
   // Extract the navigation object keys from the translations
-  const navigationKeys = Object.keys(t.raw("navigation"));
+  // const navigationKeys = Object.keys(t.raw("navigation"));
   return (
     <>
-      <LangSwitcher />
-      {/* <Header /> */}
-      <nav>
+      <div className="h-screen relative">
+        <LangSwitcher />
+        {/* <Header /> */}
+        <main className="mt-40">
+          {/* <Modal
+          bgColor="bg-white"
+          isOpen={ModalStore.modalName === modals.scedule}
+          closeModal={ModalStore.closeModal}
+        >
+          <Calender />
+        </Modal> */}
+
+          <AboutSection data={data.about} />
+          {/* <GallerySection data={data.gallery} />
+        <ContentSection data={data.content} />
+        <ProductsSection data={data.products} />
+        <ContactSection data={data.contact} /> */}
+        </main>
+      </div>
+      {/* <div>{t(`title`)}</div> */}
+      {/* <nav>
         <ul>
           {navigationKeys.map((key) => (
             <li key={key}>
@@ -45,26 +63,8 @@ const HomePage = () => {
             <p dangerouslySetInnerHTML={{ __html: t("description") }}></p>
           </aside>
         </div>
-      </main>
+      </main> */}
     </>
-    /* <div className="h-screen relative">
-       <Header />
-      <main className="">
-        <Modal
-          bgColor="bg-white"
-          isOpen={ModalStore.modalName === modals.scedule}
-          closeModal={ModalStore.closeModal}
-        >
-          <Calender />
-        </Modal>
-
-        <AboutSection data={data.about} />
-        <GallerySection data={data.gallery} />
-        <ContentSection data={data.content} />
-        <ProductsSection data={data.products} />
-        <ContactSection data={data.contact} />
-      </main> 
-   </div>*/
   );
 };
 

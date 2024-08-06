@@ -1,11 +1,405 @@
 {
-  "Home": {
-    "navigation": {
-      "home": "Inicio",
-      "about": "Acerca de",
-      "contact": "Contacto"
+  "about": {
+    "type": "Sobre",
+    "title": "Sobre Nosotros",
+    "backgroundImage": "/images/about/bg.jpg",
+    "content": {
+      "intro": "Bienvenido a nuestra plataforma, donde ayudamos a los hombres a desarrollar la confianza y las habilidades que necesitan para atraer y conectarse con las mujeres que desean.",
+      "targetAudience": {
+        "ageRange": "25-40",
+        "gender": "Masculino",
+        "location": "En cualquier lugar del mundo donde sea posible la comunicación en línea, principalmente hombres que hablan hebreo y viven en grandes ciudades.",
+        "maritalStatus": "Soltero, sin hijos",
+        "occupation": "Empleado, con intereses en deportes, aprendizaje, lectura, socialización, viajes y conocer gente nueva."
+      },
+      "customerProfile": {
+        "financialStatus": "Ganando más de 15,000 ILS al mes",
+        "personalityTraits": [
+          "Atento",
+          "Disciplinado",
+          "Inteligente",
+          "Amor propio",
+          "Social",
+          "Comprometido con el éxito con las mujeres"
+        ],
+        "challenges": [
+          "Dificultad para iniciar la comunicación con mujeres",
+          "Miedo a acercarse a mujeres de interés",
+          "Incertidumbre al continuar conversaciones en citas",
+          "Miedo al rechazo en las primeras etapas de conocer mujeres"
+        ],
+        "goals": [
+          "Convertirse en un hombre que atrae fácilmente a las mujeres para relaciones o encuentros casuales",
+          "Tener una fuerte confianza y habilidades sociales",
+          "Participar en interacciones con mujeres de manera fácil y agradable"
+        ],
+        "emotionalJourney": {
+          "beforeService": [
+            "Frustrado",
+            "Miedoso",
+            "Ansioso",
+            "Lleno de pensamientos negativos sobre el futuro"
+          ],
+          "afterService": [
+            "Feliz",
+            "Confiado",
+            "Carismático",
+            "Calmado",
+            "Motivado"
+          ]
+        }
+      },
+      "valuesAndBeliefs": {
+        "beliefs": [
+          "Creencia en la importancia de la autenticidad y la confianza en las relaciones",
+          "Creencia en que dominar la comunicación es clave para el éxito en las citas"
+        ]
+      },
+      "missionStatement": "Nuestra misión es empoderar a los hombres para superar sus miedos y desarrollar las habilidades necesarias para navegar el mundo de las citas con confianza y autenticidad.",
+      "myImage": {
+        "url": "/images/about/images/me.jpg",
+        "altText": "Mi Foto",
+        "caption": "Imagen de Jerusalén"
+      }
+    }
+  },
+  "gallery": {
+    "type": "gallery",
+    "backgroundImage": "/images/gallery/bg.jpg",
+    "title": "Galería de Historias de Éxito",
+    "description": "Explora los viajes de hombres que transformaron sus vidas amorosas con nuestra guía. Cada imagen cuenta una historia de crecimiento personal, confianza y conexión.",
+    "sections": [
+      {
+        "sectionTitle": "Transformaciones de Clientes",
+        "images": [
+          {
+            "url": "/images/gallery/images/clientTransformation/1.jpg",
+            "altText": "Antes y después de la transformación de un cliente",
+            "caption": "De tímido e inseguro a confiado y carismático."
+          },
+          {
+            "url": "/images/gallery/images/clientTransformation/2.jpg",
+            "altText": "Cliente en una cita exitosa",
+            "caption": "Construyendo conexiones significativas con facilidad."
+          },
+          {
+            "url": "/images/gallery/images/clientTransformation/3.jpg",
+            "altText": "Sesión de taller grupal",
+            "caption": "Aprendiendo y creciendo juntos."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Talleres y Eventos",
+        "images": [
+          {
+            "url": "/images/gallery/images/events/1.jpg",
+            "altText": "Taller interactivo con clientes",
+            "caption": "Entrenamiento práctico para desarrollar confianza en las citas."
+          },
+          {
+            "url": "/images/gallery/images/events/2.jpg",
+            "altText": "Mentor guiando a clientes en escenarios del mundo real",
+            "caption": "Práctica en tiempo real para superar miedos."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Logros de Clientes",
+        "images": [
+          {
+            "url": "/images/gallery/images/achivements/1.jpg",
+            "altText": "Cliente celebrando una cita exitosa",
+            "caption": "Alcanzando hitos personales en las citas."
+          },
+          {
+            "url": "/images/gallery/images/achivements/2.jpg",
+            "altText": "Miniatura de video de testimonio",
+            "caption": "Escucha directamente de nuestros clientes sobre sus experiencias."
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "type": "content",
+    "backgroundImage": "/images/content/bg.jpg",
+    "title": "Consejos y Recursos de Expertos",
+    "description": "Empoderándote con el conocimiento y las herramientas para tener éxito en tu vida amorosa. Explora nuestros artículos, videos y recursos diseñados para aumentar tu confianza y mejorar tus habilidades de comunicación.",
+    "categories": [
+      {
+        "categoryTitle": "Consejos y Estrategias de Citas",
+        "contentItems": [
+          {
+            "type": "article",
+            "title": "Cómo Acercarse a las Mujeres con Confianza",
+            "summary": "Aprende técnicas efectivas para acercarte a las mujeres sin miedo y causar una buena impresión.",
+            "url": "path_to_article1.html",
+            "article": {
+              "title": "Logra Tus Metas con las Mujeres: Supera el Miedo y Construye Confianza",
+              "intro": "Si tienes dificultades para acercarte a las mujeres, comunicarte de manera efectiva o llevar las relaciones al siguiente nivel, no estás solo. Muchos hombres enfrentan estos desafíos, pero con la orientación adecuada, puedes transformar tu vida amorosa.",
+              "painPoints": [
+                "Miedo de acercarse a las mujeres.",
+                "No saber qué decir al iniciar conversaciones.",
+                "Incapacidad para mantener conversaciones interesantes.",
+                "Miedo al rechazo durante el primer encuentro.",
+                "Dificultad para convertir las citas en relaciones significativas."
+              ],
+              "desires": [
+                "Convertirse en un hombre que atrae a las mujeres sin esfuerzo.",
+                "Desarrollar una fuerte confianza en situaciones sociales.",
+                "Dominar el arte de la seducción y la comunicación.",
+                "Disfrutar interactuando con mujeres y construyendo conexiones.",
+                "Obtener la habilidad de convertir citas en relaciones más profundas."
+              ],
+              "transformation": "Después de trabajar con nosotros, te sentirás empoderado, confiado y listo para acercarte a cualquier mujer en cualquier situación. Aprenderás a comunicarte de manera auténtica, mantener conversaciones significativas y guiar las interacciones hacia los resultados que deseas. Imagina poder expresar tus deseos con confianza y navegar el mundo de las citas con facilidad."
+            }
+          },
+          {
+            "type": "article",
+            "title": "Dominando el Arte de la Conversación",
+            "summary": "Mira este video para descubrir cómo mantener las conversaciones fluyendo de manera natural y evitar silencios incómodos.",
+            "url": "path_to_video1.html",
+            "article": {
+              "title": "Dominando el Arte de la Conversación",
+              "intro": "Las conversaciones son los bloques de construcción de relaciones significativas, tanto personales como profesionales. Dominar el arte de la conversación puede abrir puertas a nuevas oportunidades, profundizar conexiones y mejorar tu vida social. Si tienes dificultades para mantener una conversación fluida o quieres mejorar tus habilidades de comunicación, entender técnicas clave puede hacer toda la diferencia.",
+              "painPoints": [
+                "Sentirse ansioso o nervioso al iniciar una conversación.",
+                "Dificultad para mantener la conversación interesante y atractiva.",
+                "No saber cómo responder o qué decir a continuación en una conversación.",
+                "Experimentar silencios incómodos y no saber cómo superarlos.",
+                "Dificultad para conectar con otros a un nivel más profundo."
+              ],
+              "desires": [
+                "Iniciar conversaciones con confianza en cualquier entorno.",
+                "Mantener discusiones atractivas y animadas con facilidad.",
+                "Responder de manera natural y efectiva para mantener la conversación en marcha.",
+                "Navegar a través de momentos incómodos y silencios con suavidad.",
+                "Construir conexiones más profundas y significativas con los demás."
+              ],
+              "transformation": "Al dominar el arte de la conversación, te sentirás a gusto en entornos sociales, capaz de iniciar y mantener discusiones atractivas con cualquiera que conozcas. Desarrollarás la habilidad de conectar con los demás a un nivel más profundo, convirtiendo simples intercambios en interacciones significativas. Esta nueva habilidad aumentará tu confianza, mejorará tu vida social y abrirá nuevas oportunidades tanto en relaciones personales como profesionales."
+            }
+          }
+        ]
+      },
+      {
+        "categoryTitle": "Desarrollo Personal",
+        "contentItems": [
+          {
+            "type": "article",
+            "title": "Construyendo Confianza en Uno Mismo desde Dentro",
+            "summary": "Entiende la importancia de la autoestima en las citas y aprende consejos prácticos para aumentar tu confianza.",
+            "url": "path_to_article2.html",
+            "article": {
+              "title": "Construyendo Confianza en Uno Mismo desde Dentro",
+              "intro": "La confianza en uno mismo es la base del éxito y la felicidad. Es lo que te empodera para enfrentar desafíos, perseguir tus metas y construir relaciones significativas. Sin embargo, la verdadera confianza en uno mismo proviene del interior, no de la validación externa. Este artículo explora el viaje de construir una confianza duradera al enfocarse en el crecimiento interno y la autoaceptación.",
+              "painPoints": [
+                "Depender de la validación externa para sentirte seguro.",
+                "Luchar con la autocrítica y el diálogo interno negativo.",
+                "Evitar nuevas oportunidades por miedo al fracaso.",
+                "Sentirse inseguro en situaciones sociales o al conocer gente nueva.",
+                "Dificultad para afirmarte y expresar tus verdaderos sentimientos."
+              ],
+              "desires": [
+                "Desarrollar un fuerte sentido de autoestima que no dependa de las opiniones de los demás.",
+                "Superar la autocrítica y reemplazar los pensamientos negativos con creencias fortalecedoras.",
+                "Abrazar los desafíos con confianza y resiliencia.",
+                "Sentirse seguro y cómodo en interacciones sociales.",
+                "Afirmarte con claridad y confianza, expresando tu verdadero yo."
+              ],
+              "transformation": "Al enfocarte en construir confianza en uno mismo desde dentro, cultivarás una creencia inquebrantable en ti mismo que permanece constante sin importar las circunstancias externas. Aprenderás a silenciar al crítico interno, abrazar tus fortalezas y enfrentar los desafíos de la vida con valentía. Esta transformación interior te empoderará para vivir de manera auténtica, perseguir tus sueños y conectarte con los demás a un nivel más profundo, lo que finalmente llevará a una vida más plena y confiada."
+            }
+          },
+          {
+            "type": "article",
+            "title": "La Guía Completa para Superar el Miedo al Rechazo",
+            "summary": "Descarga nuestra guía completa para abordar la ansiedad por rechazo y acercarte a las citas con una mentalidad positiva.",
+            "url": "path_to_ebook.html",
+            "article": {
+              "title": "La Guía Completa para Superar el Miedo al Rechazo",
+              "intro": "El miedo al rechazo es un sentimiento común y natural, pero puede impedirte aprovechar oportunidades, construir relaciones y alcanzar tu máximo potencial. Ya sea en tu vida personal o en tus esfuerzos profesionales, aprender a superar este miedo es crucial para el crecimiento personal y el éxito. Esta guía proporciona estrategias prácticas para ayudarte a enfrentar y conquistar el miedo al rechazo, empoderándote para tomar riesgos y aprovechar las oportunidades de la vida con confianza.",
+              "painPoints": [
+                "Evitar nuevas oportunidades por miedo al rechazo.",
+                "Sentirse paralizado o ansioso ante la idea de pedir lo que quieres.",
+                "Experimentar baja autoestima y diálogo interno negativo después de enfrentar el rechazo.",
+                "Luchar por seguir adelante después de ser rechazado en situaciones personales o profesionales.",
+                "Dejar que el miedo al rechazo te impida construir relaciones significativas."
+              ],
+              "desires": [
+                "Construir resiliencia y confianza para enfrentar el rechazo sin miedo.",
+                "Desarrollar una mentalidad saludable que vea el rechazo como una experiencia de aprendizaje.",
+                "Aprender a tomar riesgos y perseguir oportunidades sin que el miedo al rechazo te detenga.",
+                "Cultivar la autocompasión y el diálogo interno positivo para mantener la autoestima después del rechazo.",
+                "Fomentar la capacidad de recuperarte rápidamente y seguir esforzándote por tus metas."
+              ],
+              "transformation": "Al seguir las estrategias en esta guía, transformarás tu relación con el rechazo, viéndolo no como un obstáculo, sino como un trampolín hacia el crecimiento. Ganarás la confianza para tomar riesgos, perseguir tus metas y abordar situaciones con una mentalidad resiliente. Este cambio te permitirá abrazar desafíos, construir relaciones más sólidas y, en última instancia, llevar una vida más valiente y satisfactoria."
+            }
+          }
+        ]
+      },
+      {
+        "categoryTitle": "Historias de Éxito",
+        "contentItems": [
+          {
+            "type": "video",
+            "title": "Por qué los Hombres Sienten la Necesidad de Satisfacer a las Mujeres",
+            "summary": "Lee esta inspiradora historia de un cliente que transformó sus experiencias de citas después de trabajar con nosotros.",
+            "url": "https://youtu.be/TF_I4Lht-zE"
+          },
+          {
+            "type": "video",
+            "title": "Cómo Generar Pensamiento Positivo con las Mujeres",
+            "summary": "Explora un estudio de caso detallado sobre el viaje de un cliente desde la ansiedad hasta la confianza en las citas.",
+            "url": "https://youtu.be/TA__0u6ZKBY"
+          }
+        ]
+      }
+    ]
+  },
+  "products": {
+    "type": "products",
+    "backgroundImage": "/images/products/bg.jpg",
+    "title": "Nuestros Servicios y Programas",
+    "description": "Transforma tu vida amorosa con nuestros programas de coaching personalizados y recursos. Elige el servicio adecuado para tus necesidades y comienza tu viaje hacia el éxito.",
+    "categories": [
+      {
+        "categoryTitle": "Programas de Coaching",
+        "products": [
+          {
+            "name": "Coaching Uno a Uno",
+            "description": "Sesiones de coaching personalizadas enfocadas en desarrollar tu confianza, habilidades de comunicación y estrategias de acercamiento.",
+            "price": "₪2,000 por mes",
+            "url": "/images/products/images/one-on-one.jpg"
+          },
+          {
+            "name": "Talleres Grupales",
+            "description": "Sesiones grupales interactivas donde aprenderás y practicarás habilidades de citas en un entorno de apoyo.",
+            "price": "₪500 por taller",
+            "url": "/images/products/images/group-workshop.jpg"
+          },
+          {
+            "name": "Tinder Booster",
+            "description": "Déjanos hacer las coincidencias y los primeros mensajes por ti, para que puedas estar un paso adelante de los demás.",
+            "price": "₪300 por mes",
+            "url": "/images/products/images/tinder.jpg"
+          }
+        ]
+      },
+      {
+        "categoryTitle": "Productos Digitales",
+        "products": [
+          {
+            "name": "Ebook de Éxito en las Citas",
+            "description": "Descarga nuestra guía completa para dominar el mundo de las citas, llena de consejos prácticos y estrategias.",
+            "price": "₪150",
+            "url": "/images/products/images/datingBook.jpg",
+            "itemAddress": "https://drive.google.com/file/d/1BU8IbXbQ5XtxQZtMV96csHB3R6NEOHuE/view?userstoinvite=shimi4865@gmail.com&ts=618fb108"
+          },
+          {
+            "name": "Programa de Audio para Aumentar la Confianza",
+            "description": "Escucha nuestro programa de audio diseñado para aumentar tu confianza y mentalidad en las citas.",
+            "price": "₪100",
+            "url": "/images/products/images/confidence-booster-audio.jpg"
+          },
+          {
+            "name": "Curso en Video de Dominio del Coqueteo",
+            "description": "Un curso en video paso a paso que te enseña el arte del coqueteo y la creación de atracción.",
+            "price": "₪300",
+            "url": "/images/products/images/flirting-mastery.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "type": "contact",
+    "backgroundImage": "/images/contact/bg.jpg",
+    "title": "Contáctanos",
+    "description": "Estamos aquí para ayudarte en tu camino hacia el éxito en las citas. Contáctanos con cualquier pregunta, consulta o para reservar una sesión.",
+    "contactMethods": [
+      {
+        "method": "Teléfono",
+        "details": "+972-54-222-6958",
+        "description": "Llámanos para asistencia inmediata o para programar una consulta."
+      },
+      {
+        "method": "Correo Electrónico",
+        "details": "leeyahav018@gmail.com",
+        "description": "Envíanos un correo electrónico y te responderemos en 24 horas."
+      },
+      {
+        "method": "Redes Sociales",
+        "details": [
+          {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/lee.yahav",
+            "icon": "FaFacebook",
+            "color": "#1877F2"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/leeyahav",
+            "icon": "FaInstagram",
+            "color": "#E4405F"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/leeyahav",
+            "icon": "FaLinkedin",
+            "color": "#0077B5"
+          },
+          {
+            "platform": "WhatsApp",
+            "url": "https://wa.me/+972542226958",
+            "icon": "FaWhatsapp",
+            "color": "#25D366"
+          },
+          {
+            "platform": "YouTube",
+            "url": "https://www.youtube.com/channel/UCOB9_h5Of9cwON2_DjQBt0A",
+            "icon": "FaYoutube",
+            "color": "#FF0000"
+          }
+        ],
+        "description": "Síguenos en las redes sociales y envíanos un mensaje."
+      }
+    ],
+    "officeImage": {
+      "url": "/images/contact/images/office.jpg",
+      "altText": "Oficina",
+      "caption": "Oficina de la empresa"
     },
-    "title": "Internacionalización (i18n) en Next.js 14",
-    "description": "Next.js 14 introduce características avanzadas de internacionalización (i18n), capacitando a los desarrolladores para gestionar fácilmente traducciones, enrutamiento basado en localización y localización de contenido para aplicaciones web globalmente accesibles. <br /> <br />Esto también aprovecha el soporte incorporado para múltiples locales, carga dinámica de contenido y manejo de respaldo robusto."
+    "contactForm": {
+      "title": "Formulario de Contacto",
+      "description": "Completa el formulario a continuación y te responderemos lo antes posible.",
+      "fields": [
+        {
+          "label": "Nombre",
+          "type": "text",
+          "placeholder": "Tu Nombre"
+        },
+        {
+          "label": "Correo Electrónico",
+          "type": "email",
+          "placeholder": "Tu Correo Electrónico"
+        },
+        {
+          "label": "Mensaje",
+          "type": "textarea",
+          "placeholder": "Tu Mensaje"
+        }
+      ],
+      "submitButton": {
+        "text": "Enviar Mensaje"
+      }
+    },
+    "location": {
+      "title": "Nuestra Ubicación",
+      "address": "Bialik 54 Ramat Gan, Israel",
+      "link": "https://www.google.com/maps/place/Bialik+St+54,+Ramat+Gan/@32.0843801,34.8110857,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4bcbc38e8c8d:0xbcbb78b9c199fab1!8m2!3d32.0843756!4d34.8136606!16s%2Fg%2F11dzmk31bj?entry=ttu"
+    },
+    "meet": {
+      "title": "Programar una Reunión"
+    }
   }
 }
