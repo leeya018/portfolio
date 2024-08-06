@@ -13,7 +13,8 @@
     "mobx": "^6.13.1",
     "mobx-persist": "^0.4.1",
     "mobx-react-lite": "^4.0.7",
-    "next": "14.2.5",
+    "next": "^14.2.5",
+    "next-intl": "^3.17.2",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1"

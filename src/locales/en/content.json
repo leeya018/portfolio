@@ -1,0 +1,410 @@
+{
+  "about": {
+    "type": "about",
+    "title": "About Us",
+    "backgroundImage": "/images/about/bg.jpg",
+    "content": {
+      "intro": "Welcome to our platform, where we help men build the confidence and skills they need to attract and connect with the women they desire.",
+      "targetAudience": {
+        "ageRange": "25-40",
+        "gender": "Male",
+        "location": "Anywhere in the world where online communication is possible, primarily Hebrew-speaking men living in large cities.",
+        "maritalStatus": "Single, without children",
+        "occupation": "Employed, with interests in sports, learning, reading, socializing, traveling, and meeting new people."
+      },
+      "customerProfile": {
+        "financialStatus": "Earning over 15,000 ILS per month",
+        "personalityTraits": [
+          "Attentive",
+          "Disciplined",
+          "Intelligent",
+          "Self-loving",
+          "Social",
+          "Committed to success with women"
+        ],
+        "challenges": [
+          "Difficulty initiating communication with women",
+          "Fear of approaching women of interest",
+          "Uncertainty in continuing conversations on dates",
+          "Fear of rejection in early stages of meeting women"
+        ],
+        "goals": [
+          "To become a man who easily attracts women for relationships or casual encounters",
+          "To have strong confidence and social skills",
+          "To engage in effortless and enjoyable interactions with women"
+        ],
+        "emotionalJourney": {
+          "beforeService": [
+            "Frustrated",
+            "Fearful",
+            "Anxious",
+            "Full of negative thoughts about the future"
+          ],
+          "afterService": [
+            "Happy",
+            "Confident",
+            "Charismatic",
+            "Calm",
+            "Motivated"
+          ]
+        }
+      },
+      "valuesAndBeliefs": {
+        "beliefs": [
+          "Belief in the importance of authenticity and confidence in relationships",
+          "Belief that mastering communication is key to successful dating"
+        ]
+      },
+      "missionStatement": "Our mission is to empower men to overcome their fears and develop the skills necessary to navigate the dating world with confidence and authenticity.",
+      "myImage": {
+        "url": "/images/about/images/me.jpg",
+        "altText": "my Self",
+        "caption": "Image from Jerusalem"
+      }
+    }
+  },
+  "gallery": {
+    "type": "gallery",
+    "backgroundImage": "/images/gallery/bg.jpg",
+
+    "title": "Success Stories Gallery",
+    "description": "Explore the journeys of men who transformed their dating lives with our guidance. Each image tells a story of personal growth, confidence, and connection.",
+    "sections": [
+      {
+        "sectionTitle": "Client Transformations",
+        "images": [
+          {
+            "url": "/images/gallery/images/clientTransformation/1.jpg",
+            "altText": "Before and after transformation of a client",
+            "caption": "From shy and uncertain to confident and charismatic."
+          },
+          {
+            "url": "/images/gallery/images/clientTransformation/2.jpg",
+            "altText": "Client on a successful date",
+            "caption": "Building meaningful connections with ease."
+          },
+          {
+            "url": "/images/gallery/images/clientTransformation/3.jpg",
+            "altText": "Group workshop session",
+            "caption": "Learning and growing together."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Workshops & Events",
+        "images": [
+          {
+            "url": "/images/gallery/images/events/1.jpg",
+            "altText": "Interactive workshop with clients",
+            "caption": "Hands-on training to build dating confidence."
+          },
+          {
+            "url": "/images/gallery/images/events/2.jpg",
+            "altText": "Mentor guiding clients in real-world scenarios",
+            "caption": "Real-time practice to conquer fears."
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Client Achievements",
+        "images": [
+          {
+            "url": "/images/gallery/images/achivements/1.jpg",
+            "altText": "Client celebrating a successful date",
+            "caption": "Achieving personal milestones in dating."
+          },
+          {
+            "url": "/images/gallery/images/achivements/2.jpg",
+            "altText": "Testimonial video thumbnail",
+            "caption": "Hear directly from our clients about their experiences."
+          }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "type": "content",
+    "backgroundImage": "/images/content/bg.jpg",
+
+    "title": "Expert Advice & Resources",
+    "description": "Empowering you with the knowledge and tools to succeed in your dating life. Explore our articles, videos, and resources designed to boost your confidence and improve your communication skills.",
+    "categories": [
+      {
+        "categoryTitle": "Dating Tips & Strategies",
+        "contentItems": [
+          {
+            "type": "article",
+            "title": "How to Approach Women with Confidence",
+            "summary": "Learn effective techniques to approach women without fear and make a strong first impression.",
+            "url": "path_to_article1.html",
+            "article": {
+              "title": "Achieve Your Goals with Women: Overcome Fear and Build Confidence",
+              "intro": "If you're struggling to approach women, communicate effectively, or take relationships to the next level, you're not alone. Many men face these challenges, but with the right guidance, you can transform your dating life.",
+              "painPoints": [
+                "Fear of approaching women.",
+                "Not knowing what to say when initiating conversations.",
+                "Inability to maintain engaging conversations.",
+                "Fear of rejection during the initial encounter.",
+                "Difficulty progressing dates into meaningful relationships."
+              ],
+              "desires": [
+                "Become a man who effortlessly attracts women.",
+                "Develop strong confidence in social situations.",
+                "Master the art of flirtation and communication.",
+                "Enjoy interacting with women and building connections.",
+                "Gain the ability to turn dates into deeper relationships."
+              ],
+              "transformation": "After working with us, you'll feel empowered, confident, and ready to approach any woman in any situation. You'll learn how to communicate authentically, maintain meaningful conversations, and lead interactions toward the outcomes you desire. Imagine being able to confidently express your desires and navigate the dating world with ease."
+            }
+          },
+          {
+            "type": "article",
+            "title": "Mastering the Art of Conversation",
+            "summary": "Watch this video to discover how to keep conversations flowing naturally and avoid awkward silences.",
+            "url": "path_to_video1.html",
+            "article": {
+              "title": "Mastering the Art of Conversation",
+              "intro": "Conversations are the building blocks of meaningful relationships, both personal and professional. Mastering the art of conversation can open doors to new opportunities, deepen connections, and improve your social life. Whether you struggle with keeping a conversation flowing or want to enhance your communication skills, understanding key techniques can make all the difference.",
+              "painPoints": [
+                "Feeling anxious or nervous when starting a conversation.",
+                "Struggling to keep the conversation engaging and interesting.",
+                "Not knowing how to respond or what to say next during a conversation.",
+                "Experiencing awkward silences and not knowing how to recover from them.",
+                "Difficulty connecting with others on a deeper level."
+              ],
+              "desires": [
+                "Initiate conversations confidently in any setting.",
+                "Maintain engaging and lively discussions with ease.",
+                "Respond naturally and effectively to keep the conversation going.",
+                "Navigate through awkward moments and silences smoothly.",
+                "Build deeper and more meaningful connections with others."
+              ],
+              "transformation": "By mastering the art of conversation, you'll feel at ease in social settings, able to initiate and maintain engaging discussions with anyone you meet. You'll develop the ability to connect with others on a deeper level, turning simple exchanges into meaningful interactions. This newfound skill will boost your confidence, enhance your social life, and open up new opportunities in both personal and professional relationships."
+            }
+          }
+        ]
+      },
+      {
+        "categoryTitle": "Personal Development",
+        "contentItems": [
+          {
+            "type": "article",
+            "title": "Building Self-Confidence from Within",
+            "summary": "Understand the importance of self-esteem in dating and learn practical tips to boost your confidence.",
+            "url": "path_to_article2.html",
+            "article": {
+              "title": "Building Self-Confidence from Within",
+              "intro": "Self-confidence is the foundation of success and happiness. It's what empowers you to take on challenges, pursue your goals, and build meaningful relationships. However, true self-confidence comes from within, not from external validation. This article explores the journey of building lasting self-confidence by focusing on internal growth and self-acceptance.",
+              "painPoints": [
+                "Relying on external validation to feel confident.",
+                "Struggling with self-doubt and negative self-talk.",
+                "Avoiding new opportunities due to fear of failure.",
+                "Feeling insecure in social situations or when meeting new people.",
+                "Difficulty asserting yourself and expressing your true feelings."
+              ],
+              "desires": [
+                "Develop a strong sense of self-worth that isn't dependent on others' opinions.",
+                "Overcome self-doubt and replace negative thoughts with empowering beliefs.",
+                "Embrace challenges with confidence and resilience.",
+                "Feel secure and at ease in social interactions.",
+                "Assert yourself with clarity and confidence, expressing your authentic self."
+              ],
+              "transformation": "By focusing on building self-confidence from within, you'll cultivate an unshakeable belief in yourself that remains steady regardless of external circumstances. You'll learn to silence the inner critic, embrace your strengths, and face life's challenges with courage. This inner transformation will empower you to live authentically, pursue your dreams, and connect with others on a deeper level, ultimately leading to a more fulfilled and confident life."
+            }
+          },
+          {
+            "type": "article",
+            "title": "The Complete Guide to Overcoming Fear of Rejection",
+            "summary": "Download our comprehensive guide to tackle rejection anxiety and approach dating with a positive mindset.",
+            "url": "path_to_ebook.html",
+            "article": {
+              "title": "The Complete Guide to Overcoming Fear of Rejection",
+              "intro": "Fear of rejection is a common and natural feeling, but it can hold you back from pursuing opportunities, building relationships, and reaching your full potential. Whether it's in your personal life or professional endeavors, learning to overcome this fear is crucial for personal growth and success. This guide provides practical strategies to help you face and conquer the fear of rejection, empowering you to take risks and embrace life's opportunities with confidence.",
+              "painPoints": [
+                "Avoiding new opportunities due to the fear of being rejected.",
+                "Feeling paralyzed or anxious at the thought of asking for what you want.",
+                "Experiencing low self-esteem and negative self-talk after facing rejection.",
+                "Struggling to move forward after being rejected in personal or professional situations.",
+                "Letting the fear of rejection prevent you from building meaningful relationships."
+              ],
+              "desires": [
+                "Build resilience and confidence to face rejection without fear.",
+                "Develop a healthy mindset that views rejection as a learning experience.",
+                "Learn to take risks and pursue opportunities without the fear of rejection holding you back.",
+                "Cultivate self-compassion and positive self-talk to maintain self-esteem after rejection.",
+                "Foster the ability to bounce back quickly and continue striving towards your goals."
+              ],
+              "transformation": "By following the strategies in this guide, you'll transform your relationship with rejection, viewing it not as a setback but as a stepping stone toward growth. You'll gain the confidence to take risks, pursue your goals, and approach situations with a resilient mindset. This shift will allow you to embrace challenges, build stronger relationships, and ultimately lead a more fearless and fulfilling life."
+            }
+          }
+        ]
+      },
+      {
+        "categoryTitle": "Success Stories",
+        "contentItems": [
+          {
+            "type": "video",
+            "title": "Why Men are feeling the need to satisfy women",
+            "summary": "Read this inspiring story of a client who transformed his dating experiences after working with us.",
+            "url": "https://youtu.be/TF_I4Lht-zE"
+          },
+          {
+            "type": "video",
+            "title": "How to generate a positive thinking with women",
+            "summary": "Explore a detailed case study of a client's journey from anxiety to confidence in dating.",
+            "url": "https://youtu.be/TA__0u6ZKBY"
+          }
+        ]
+      }
+    ]
+  },
+  "products": {
+    "type": "products",
+    "backgroundImage": "/images/products/bg.jpg",
+
+    "title": "Our Services & Programs",
+    "description": "Transform your dating life with our tailored coaching programs and resources. Choose the right service for your needs and start your journey to success.",
+    "categories": [
+      {
+        "categoryTitle": "Coaching Programs",
+        "products": [
+          {
+            "name": "One-on-One Coaching",
+            "description": "Personalized coaching sessions focused on building your confidence, communication skills, and approach strategies.",
+            "price": "₪2,000 per month",
+            "url": "/images/products/images/one-on-one.jpg"
+          },
+          {
+            "name": "Group Workshops",
+            "description": "Interactive group sessions where you'll learn and practice dating skills in a supportive environment.",
+            "price": "₪500 per workshop",
+            "url": "/images/products/images/group-workshop.jpg"
+          },
+          {
+            "name": "Tinder Booster",
+            "description": "let us do the matches and the first messages for you , so you can be ahead of anybody else ",
+            "price": "₪300 per month",
+            "url": "/images/products/images/tinder.jpg"
+          }
+        ]
+      },
+      {
+        "categoryTitle": "Digital Products",
+        "products": [
+          {
+            "name": "Dating Success Ebook",
+            "description": "Download our comprehensive guide to mastering the dating world, filled with practical tips and strategies.",
+            "price": "₪150",
+            "url": "/images/products/images/datingBook.jpg",
+            "itemAddress": "https://drive.google.com/file/d/1BU8IbXbQ5XtxQZtMV96csHB3R6NEOHuE/view?userstoinvite=shimi4865@gmail.com&ts=618fb108"
+          },
+          {
+            "name": "Confidence Booster Audio Program",
+            "description": "Listen to our curated audio program designed to boost your confidence and mindset in dating.",
+            "price": "₪100",
+            "url": "/images/products/images/confidence-booster-audio.jpg"
+          },
+          {
+            "name": "Flirting Mastery Video Course",
+            "description": "A step-by-step video course that teaches you the art of flirting and creating attraction.",
+            "price": "₪300",
+            "url": "/images/products/images/flirting-mastery.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "type": "contact",
+    "backgroundImage": "/images/contact/bg.jpg",
+
+    "title": "Get in Touch",
+    "description": "We’re here to help you on your journey to dating success. Reach out to us with any questions, inquiries, or to book a session.",
+    "contactMethods": [
+      {
+        "method": "Phone",
+        "details": "+972-54-222-6958",
+        "description": "Call us for immediate assistance or to schedule a consultation."
+      },
+      {
+        "method": "Email",
+        "details": "leeyahav018@gmail.com",
+        "description": "Send us an email and we’ll get back to you within 24 hours."
+      },
+
+      {
+        "method": "Social Media",
+        "details": [
+          {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/lee.yahav",
+            "icon": "FaFacebook",
+            "color": "#1877F2"
+          },
+          {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/leeyahav",
+            "icon": "FaInstagram",
+            "color": "#E4405F"
+          },
+          {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/leeyahav",
+            "icon": "FaLinkedin",
+            "color": "#0077B5"
+          },
+          {
+            "platform": "WhatsApp",
+            "url": "https://wa.me/+972542226958",
+            "icon": "FaWhatsapp",
+            "color": "#25D366"
+          },
+          {
+            "platform": "YouTube",
+            "url": "https://www.youtube.com/channel/UCOB9_h5Of9cwON2_DjQBt0A",
+            "icon": "FaYoutube",
+            "color": "#FF0000"
+          }
+        ],
+        "description": "Follow us on social media and send us a message."
+      }
+    ],
+    "officeImage": {
+      "url": "/images/contact/images/office.jpg",
+      "altText": "office",
+      "caption": "office of the company "
+    },
+    "contactForm": {
+      "title": "Contact Form",
+      "description": "Fill out the form below and we’ll get back to you as soon as possible.",
+      "fields": [
+        {
+          "label": "Name",
+          "type": "text",
+          "placeholder": "Your Name"
+        },
+        {
+          "label": "Email",
+          "type": "email",
+          "placeholder": "Your Email"
+        },
+        {
+          "label": "Message",
+          "type": "textarea",
+          "placeholder": "Your Message"
+        }
+      ],
+      "submitButton": {
+        "text": "Send Message"
+      }
+    },
+    "location": {
+      "title": "Our Location",
+      "address": "Bialik 54 Ramat Gan, Israel",
+      "link": "https://www.google.com/maps/place/Bialik+St+54,+Ramat+Gan/@32.0843801,34.8110857,17z/data=!3m1!4b1!4m6!3m5!1s0x151d4bcbc38e8c8d:0xbcbb78b9c199fab1!8m2!3d32.0843756!4d34.8136606!16s%2Fg%2F11dzmk31bj?entry=ttu"
+    },
+    "meet": {
+      "title": "scedule meeting"
+    }
+  }
+}

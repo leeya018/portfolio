@@ -17,11 +17,38 @@ import Modal from "@/components/Modal";
 import Calender from "@/components/Calender";
 import { ModalStore } from "@/mobx/modalStore";
 import { modals } from "@/util";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import LangSwitcher from "@/components/LanguageSwitcher";
 
 const HomePage = () => {
+  const t = useTranslations("Home");
+  // Extract the navigation object keys from the translations
+  const navigationKeys = Object.keys(t.raw("navigation"));
   return (
-    <div className="h-screen relative">
-      <Header />
+    <>
+      <LangSwitcher />
+      {/* <Header /> */}
+      <nav>
+        <ul>
+          {navigationKeys.map((key) => (
+            <li key={key}>
+              <a href={`#/${key}`}>{t(`navigation.${key}`)}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <main>
+        <div>
+          <aside>
+            <h2>{t("title")}</h2>
+            <p dangerouslySetInnerHTML={{ __html: t("description") }}></p>
+          </aside>
+        </div>
+      </main>
+    </>
+    /* <div className="h-screen relative">
+       <Header />
       <main className="">
         <Modal
           bgColor="bg-white"
@@ -36,8 +63,8 @@ const HomePage = () => {
         <ContentSection data={data.content} />
         <ProductsSection data={data.products} />
         <ContactSection data={data.contact} />
-      </main>
-    </div>
+      </main> 
+   </div>*/
   );
 };
 
