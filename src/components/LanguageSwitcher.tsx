@@ -37,19 +37,19 @@ const LangSwitcher: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center bg-gray-100">
-      <div className="relative text-lg w-48">
+      <div className="relative text-lg w-28">
         <button
           className=" justify-between w-full  
            text-white bg-black 
             focus:ring-4 
              focus:ring-blue-300 
            font-medium 
-            text-sm px-5 py-2.5 text-center
+            text-sm  py-2.5 text-center
              inline-flex items-center "
           onClick={() => setIsOptionsExpanded(!isOptionsExpanded)}
           onBlur={() => setIsOptionsExpanded(false)}
         >
-          {getLang()}
+          <div className="w-full mx-auto">{getLang()}</div>
 
           <svg
             fill="none"
@@ -74,7 +74,10 @@ const LangSwitcher: React.FC = () => {
               : "translate-y-0 scale-y-100 opacity-100"
           }`}
         >
-          <ul className="absolute left-0 right-0 mb-4 bg-white text-black divide-y rounded-lg shadow-lg overflow-hidden">
+          <ul
+            className="absolute left-0 right-0 mb-4 bg-white text-black divide-y 
+          rounded-lg shadow-lg overflow-hidden"
+          >
             {options.map((option, index) => (
               <li
                 key={index}
