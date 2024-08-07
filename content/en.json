@@ -373,6 +373,18 @@
           "/images/projects/code-finder/3.png",
           "/images/projects/code-finder/4.png"
         ]
+      },
+      {
+        "name": "E-Golden",
+        "description": "A website for a company in Portugal which are specialized with tax laws and relocations to Portugal",
+        "link": "https://e-golden.netlify.app/",
+        "images": [
+          "/images/projects/e-golden/1.png",
+          "/images/projects/e-golden/2.png",
+          "/images/projects/e-golden/3.png",
+          "/images/projects/e-golden/4.png",
+          "/images/projects/e-golden/5.png"
+        ]
       }
     ]
   },
