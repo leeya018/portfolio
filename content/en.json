@@ -340,6 +340,39 @@
           "/images/projects/affirmations/3.png",
           "/images/projects/affirmations/4.png"
         ]
+      },
+      {
+        "name": "Shosh-Gallery",
+        "description": "Show the gallery of photos of a client and enable other users to choose items to cart and contact seller via mail box",
+        "link": "https://shosh-gallery.netlify.app/",
+        "images": [
+          "/images/projects/shosh-gallery/1.png",
+          "/images/projects/shosh-gallery/2.png",
+          "/images/projects/shosh-gallery/3.png",
+          "/images/projects/shosh-gallery/4.png"
+        ]
+      },
+      {
+        "name": "Orly-Site",
+        "description": "show the info about the creator . in that case is about someone which is about yoga ,treatments and music creation",
+        "link": "https://orly-visman.netlify.app/",
+        "images": [
+          "/images/projects/orly/1.png",
+          "/images/projects/orly/2.png",
+          "/images/projects/orly/3.png",
+          "/images/projects/orly/4.png"
+        ]
+      },
+      {
+        "name": "Code-Finder",
+        "description": "as a programmer that is typing lots of code. somtime you forget how to use something, so now oyu can save pieces of code theat you dont remeber, some code which are take lots of time to write ,and somtimes you are just lazy. so the purpose here is to same time and  headache for the porgrammer",
+        "link": "https://code-finder.netlify.app/",
+        "images": [
+          "/images/projects/code-finder/1.png",
+          "/images/projects/code-finder/2.png",
+          "/images/projects/code-finder/3.png",
+          "/images/projects/code-finder/4.png"
+        ]
       }
     ]
   },
