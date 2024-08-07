@@ -90,6 +90,15 @@ const Header: React.FC = () => {
               </button>
               <button
                 onClick={() => {
+                  scrollToSection("projects");
+                  setIsMenuOpen(false);
+                }}
+                className="hover:text-gray-400"
+              >
+                {t(`projects.headerText`)}
+              </button>
+              <button
+                onClick={() => {
                   scrollToSection("contact");
                   setIsMenuOpen(false);
                 }}

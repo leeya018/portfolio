@@ -321,6 +321,28 @@
       }
     ]
   },
+  "projects": {
+    "type": "projects",
+    "headerText": "projects",
+
+    "backgroundImage": "/images/products/bg.jpg",
+
+    "title": "My Projects",
+    "description": "Projects that I build for my clients",
+    "items": [
+      {
+        "name": "Affirmations",
+        "description": "Helps you to have your affirmations , and by using the senses of sight hear and by using the skill of repetition , you  can get the affirmtions to work faster for you ",
+        "link": "https://affirmations-lee.netlify.app/",
+        "images": [
+          "/images/projects/affirmations/1.png",
+          "/images/projects/affirmations/2.png",
+          "/images/projects/affirmations/3.png",
+          "/images/projects/affirmations/4.png"
+        ]
+      }
+    ]
+  },
   "contact": {
     "type": "contact",
     "headerText": "contact",
