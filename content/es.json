@@ -315,6 +315,61 @@
       }
     ]
   },
+  "projects": {
+    "type": "projects",
+    "headerText": "proyectos",
+
+    "backgroundImage": "/images/products/bg.jpg",
+
+    "title": "Mis Proyectos",
+    "description": "Proyectos que construyo para mis clientes",
+    "items": [
+      {
+        "name": "Afirmaciones",
+        "description": "Te ayuda a tener tus afirmaciones, y utilizando los sentidos de la vista, el oído y la habilidad de la repetición, puedes hacer que las afirmaciones funcionen más rápido para ti",
+        "link": "https://affirmations-lee.netlify.app/",
+        "images": [
+          "/images/projects/affirmations/1.png",
+          "/images/projects/affirmations/2.png",
+          "/images/projects/affirmations/3.png",
+          "/images/projects/affirmations/4.png"
+        ]
+      },
+      {
+        "name": "Galería Shosh",
+        "description": "Muestra la galería de fotos de un cliente y permite a otros usuarios elegir artículos para el carrito y contactar al vendedor a través del buzón de correo",
+        "link": "https://shosh-gallery.netlify.app/",
+        "images": [
+          "/images/projects/shosh-gallery/1.png",
+          "/images/projects/shosh-gallery/2.png",
+          "/images/projects/shosh-gallery/3.png",
+          "/images/projects/shosh-gallery/4.png"
+        ]
+      },
+      {
+        "name": "Sitio Orly",
+        "description": "Muestra información sobre la creadora. En este caso, se trata de alguien que se dedica al yoga, tratamientos y creación musical",
+        "link": "https://orly-visman.netlify.app/",
+        "images": [
+          "/images/projects/orly/1.png",
+          "/images/projects/orly/2.png",
+          "/images/projects/orly/3.png",
+          "/images/projects/orly/4.png"
+        ]
+      },
+      {
+        "name": "Buscador de Código",
+        "description": "Como programador que escribe mucho código, a veces olvidas cómo usar algo, así que ahora puedes guardar fragmentos de código que no recuerdas, algún código que lleva mucho tiempo escribir, y a veces simplemente eres perezoso. Entonces, el propósito aquí es ahorrar tiempo y dolores de cabeza para el programador",
+        "link": "https://code-finder.netlify.app/",
+        "images": [
+          "/images/projects/code-finder/1.png",
+          "/images/projects/code-finder/2.png",
+          "/images/projects/code-finder/3.png",
+          "/images/projects/code-finder/4.png"
+        ]
+      }
+    ]
+  },
   "contact": {
     "type": "contact",
     "headerText": "Contáctanos",

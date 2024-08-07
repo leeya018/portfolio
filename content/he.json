@@ -317,6 +317,61 @@
       }
     ]
   },
+  "projects": {
+    "type": "projects",
+    "headerText": "פרויקטים",
+
+    "backgroundImage": "/images/products/bg.jpg",
+
+    "title": "הפרויקטים שלי",
+    "description": "פרויקטים שבניתי עבור לקוחותיי",
+    "items": [
+      {
+        "name": "הצהרות",
+        "description": "עוזר לך לקבל את ההצהרות שלך, ובעזרת החושים של ראייה ושמיעה ובשימוש במיומנות החזרה, אתה יכול לגרום להצהרות לעבוד עבורך מהר יותר",
+        "link": "https://affirmations-lee.netlify.app/",
+        "images": [
+          "/images/projects/affirmations/1.png",
+          "/images/projects/affirmations/2.png",
+          "/images/projects/affirmations/3.png",
+          "/images/projects/affirmations/4.png"
+        ]
+      },
+      {
+        "name": "גלריית שוש",
+        "description": "מציג את גלריית התמונות של לקוח ומאפשר למשתמשים אחרים לבחור פריטים לעגלה וליצור קשר עם המוכר דרך תיבת הדואר",
+        "link": "https://shosh-gallery.netlify.app/",
+        "images": [
+          "/images/projects/shosh-gallery/1.png",
+          "/images/projects/shosh-gallery/2.png",
+          "/images/projects/shosh-gallery/3.png",
+          "/images/projects/shosh-gallery/4.png"
+        ]
+      },
+      {
+        "name": "אתר אורלי",
+        "description": "מציג את המידע על היוצר. במקרה הזה, מדובר על מישהי שעוסקת ביוגה, טיפולים ויצירת מוזיקה",
+        "link": "https://orly-visman.netlify.app/",
+        "images": [
+          "/images/projects/orly/1.png",
+          "/images/projects/orly/2.png",
+          "/images/projects/orly/3.png",
+          "/images/projects/orly/4.png"
+        ]
+      },
+      {
+        "name": "מחפש קוד",
+        "description": "כתכנת שמקליד הרבה קוד, לפעמים אתה שוכח איך להשתמש במשהו, אז עכשיו אתה יכול לשמור קטעי קוד שאתה לא זוכר, קוד שלוקח הרבה זמן לכתוב, ולפעמים אתה פשוט עצלן. המטרה כאן היא לחסוך זמן וכאב ראש לתכנת",
+        "link": "https://code-finder.netlify.app/",
+        "images": [
+          "/images/projects/code-finder/1.png",
+          "/images/projects/code-finder/2.png",
+          "/images/projects/code-finder/3.png",
+          "/images/projects/code-finder/4.png"
+        ]
+      }
+    ]
+  },
   "contact": {
     "type": "contact",
     "headerText": "צור קשר",

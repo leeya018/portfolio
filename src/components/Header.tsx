@@ -39,7 +39,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="fixed top-0 z-50 left-0 w-full text-white 
+      className="fixed top-0 z-10 left-0 w-full text-white 
      flex justify-center"
     >
       {isMenuOpen ? (

@@ -1,6 +1,7 @@
 import { Fragment, ReactNode } from "react";
 
 import { Dialog, Transition } from "@headlessui/react";
+import { ModalStore } from "@/mobx/modalStore";
 
 type ModalProps = {
   isOpen: boolean;
@@ -36,12 +37,20 @@ function Modal({ isOpen, closeModal, children, bgColor }: ModalProps) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              {/* <Dialog.Panel className="w-[50vw] rounded-md max-w-full transform overflow-hidden   p-6 text-left align-middle shadow-xl transition-all"> */}
-              <Dialog.Panel
-                className={`w-[90vw] lg:w-[50vw] rounded-md max-w-full transform overflow-hidden   p-6 text-left align-middle shadow-xl transition-all  ${bgColor}`}
-              >
-                {children}
-              </Dialog.Panel>
+              <div className="relative ">
+                <div
+                  className="text-black z-10 text-3xl cursor-pointer absolute top-2 right-2 hover:scale-105 "
+                  onClick={() => ModalStore.closeModal()}
+                >
+                  X
+                </div>
+                {/* <Dialog.Panel className="w-[50vw] rounded-md max-w-full transform overflow-hidden   p-6 text-left align-middle shadow-xl transition-all"> */}
+                <Dialog.Panel
+                  className={`w-[90vw] lg:w-[50vw] rounded-md max-w-full transform overflow-hidden   p-6 text-left align-middle shadow-xl transition-all  ${bgColor}`}
+                >
+                  {children}
+                </Dialog.Panel>
+              </div>
             </Transition.Child>
           </div>
         </div>
