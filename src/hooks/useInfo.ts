@@ -1,8 +1,8 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import heContent from "@/locales/he/content.json";
-import enContent from "@/locales/en/content.json";
-import esContent from "@/locales/es/content.json";
+import enContent from "../../content/en.json";
+import heContent from "../../content/he.json";
+import esContent from "../../content/es.json";
 import { usePathname, useSearchParams } from "next/navigation";
 
 const useInfo = () => {

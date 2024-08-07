@@ -9,7 +9,7 @@ const useContent = (data: any) => {
     if (contentStore.name === data.type && contentRef.current) {
       contentRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [contentStore.name]);
+  }, [contentStore.name, data.type]);
 
   const scrollToContent = () => {
     if (contentStore.name !== "") {

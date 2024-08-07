@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import enContent from "@/locales/en/content.json";
-import heContent from "@/locales/he/content.json";
-import esContent from "@/locales/es/content.json";
+import enContent from "../../content/en.json";
+import heContent from "../../content/he.json";
+import esContent from "../../content/es.json";
 
 type Locale = "en" | "he" | "es";
 
