@@ -3,6 +3,7 @@ import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 
 const LangSwitcher: React.FC = () => {
   interface Option {
@@ -14,6 +15,7 @@ const LangSwitcher: React.FC = () => {
   const pathname = usePathname();
 
   const [isOptionsExpanded, setIsOptionsExpanded] = useState(false);
+  const locale = useLocale();
 
   const options: Option[] = [
     { country: "English", code: "en" },
@@ -24,6 +26,13 @@ const LangSwitcher: React.FC = () => {
   const setOption = (option: Option) => {
     setIsOptionsExpanded(false);
     router.push(`/${option.code}`);
+  };
+
+  const getLang = () => {
+    if (locale === "en") return options[0].country;
+    if (locale === "he") return options[1].country;
+    if (locale === "es") return options[2].country;
+    return options[0].country;
   };
 
   return (
@@ -40,7 +49,8 @@ const LangSwitcher: React.FC = () => {
           onClick={() => setIsOptionsExpanded(!isOptionsExpanded)}
           onBlur={() => setIsOptionsExpanded(false)}
         >
-          Select Language
+          {getLang()}
+
           <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -73,7 +83,11 @@ const LangSwitcher: React.FC = () => {
                   e.preventDefault();
                   setOption(option);
                 }}
-                onClick={() => setIsOptionsExpanded(false)}
+                onClick={() => {
+                  console.log("option");
+                  console.log(option);
+                  setIsOptionsExpanded(false);
+                }}
               >
                 &nbsp;&nbsp;{option.country}
                 {pathname === `/${option.code}` && (
@@ -102,106 +116,3 @@ const LangSwitcher: React.FC = () => {
 };
 
 export default LangSwitcher;
-
-// import React, { useEffect, useState } from "react";
-// import Select from "react-select";
-// import { observer } from "mobx-react-lite";
-// import { languageStore } from "@/mobx/languageStore";
-// import ReactCountryFlag from "react-country-flag";
-// // import { logDev } from "@/util";
-
-// const LanguageSwitcher = observer(() => {
-//   const [chosenOption, setChosenOption] = useState<number>(0);
-
-//   useEffect(() => {
-//     const storedLocale =
-//       typeof window !== "undefined"
-//         ? localStorage.getItem("selectedLocale")
-//         : null;
-//     if (storedLocale === "en") setChosenOption(0);
-//     else if (storedLocale === "he") setChosenOption(1);
-//     else if (storedLocale === "es") setChosenOption(2);
-
-//     if (storedLocale) {
-//       languageStore.setLocale(storedLocale);
-//     } else {
-//       languageStore.setLocale("en");
-//     }
-//   }, []);
-
-//   const changeLanguage = (newLocale: string, optionIndex: number) => {
-//     console.log({ newLocale });
-//     if (typeof window !== "undefined") {
-//       localStorage.setItem("selectedLocale", newLocale);
-//     }
-//     languageStore.setLocale(newLocale);
-//     setChosenOption(optionIndex);
-//   };
-
-//   const options = [
-//     {
-//       value: "USD",
-//       label: (
-//         <div
-//           className="flex items-center text-black"
-//           onClick={() => changeLanguage("en", 0)}
-//         >
-//           <ReactCountryFlag
-//             countryCode="US"
-//             svg
-//             style={{
-//               width: "2em",
-//               height: "2em",
-//             }}
-//             title="US"
-//           />
-//           <span className="mx-2.5">USA</span>
-//         </div>
-//       ),
-//     },
-//     {
-//       value: "ILS",
-//       label: (
-//         <div
-//           className="flex items-center text-black"
-//           onClick={() => changeLanguage("he", 1)}
-//         >
-//           <ReactCountryFlag
-//             countryCode="IL"
-//             svg
-//             style={{
-//               width: "2em",
-//               height: "2em",
-//             }}
-//             title="IL"
-//           />
-//           <span className="mx-2.5">Israel</span>
-//         </div>
-//       ),
-//     },
-//     {
-//       value: "EUR",
-//       label: (
-//         <div
-//           className="flex items-center text-black"
-//           onClick={() => changeLanguage("es", 2)}
-//         >
-//           <ReactCountryFlag
-//             countryCode="ES"
-//             svg
-//             style={{
-//               width: "2em",
-//               height: "2em",
-//             }}
-//             title="SPAIN"
-//           />
-//           <span className="mx-2.5">Spain</span>
-//         </div>
-//       ),
-//     },
-//   ];
-
-//   return <Select options={options} value={options[chosenOption]} />;
-// });
-
-// export default LanguageSwitcher;
